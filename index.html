@@ -1,1417 +1,1957 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Synthekai Collective — Music, Myth & Consciousness</title>
-<meta name="description" content="Synthekai Collective: a transmedia signal system of music, myth, and consciousness by Tyler Frost (DablerFrost). Enter the Drift."/>
-<meta name="author" content="Synthekai Collective"/>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Synthekai Collective — Music, Myth & Consciousness"/>
-<meta property="og:description" content="A transmedia signal system of music, myth, and consciousness. Enter the Drift."/>
-<meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/QubS64AQcWOlaldy2CFyagHzi8b2/social-images/social-1777497049461-1000010953.webp"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Synthekai Collective — Music, Myth & Consciousness"/>
-<meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/QubS64AQcWOlaldy2CFyagHzi8b2/social-images/social-1777497049461-1000010953.webp"/>
-<meta http-equiv="X-Content-Type-Options" content="nosniff"/>
-<meta http-equiv="X-Frame-Options" content="SAMEORIGIN"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-<style>
-:root{
-  --bg:#080812;
-  --bg2:#0c0c1a;
-  --bg3:#0f0f20;
-  --teal:#00f5a0;
-  --teal-dim:rgba(0,245,160,0.12);
-  --teal-glow:rgba(0,245,160,0.35);
-  --purple:#9b5de5;
-  --purple-dim:rgba(155,93,229,0.15);
-  --purple-glow:rgba(155,93,229,0.4);
-  --pink:#f15bb5;
-  --text:#f0ede8;
-  --text2:rgba(240,237,232,0.62);
-  --text3:rgba(240,237,232,0.35);
-  --border:rgba(0,245,160,0.12);
-  --border2:rgba(0,245,160,0.25);
-  --font-display:'EB Garamond',Georgia,serif;
-  --font-mono:'Space Mono',monospace;
-  --font-body:'Inter',sans-serif;
-  --ease:cubic-bezier(0.16,1,0.3,1);
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  background:var(--bg);
-  color:var(--text);
-  font-family:var(--font-body);
-  overflow-x:hidden;
-  min-height:100vh;
-}
-::selection{background:var(--teal-dim);color:var(--teal)}
-::-webkit-scrollbar{width:3px}
-::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:var(--border2)}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synthekai Collective — Music, Myth & Consciousness</title>
+    <meta name="description" content="Synthekai Collective: a transmedia signal system of music, myth, and consciousness by Tyler Frost (DablerFrost). Enter the Drift." />
+    <meta name="author" content="Synthekai Collective" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Synthekai Collective — Music, Myth & Consciousness" />
+    <meta property="og:description" content="A transmedia signal system of music, myth, and consciousness. Enter the Drift." />
+    <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/QubS64AQcWOlaldy2CFyagHzi8b2/social-images/social-1777497049461-1000010953.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Synthekai Collective — Music, Myth & Consciousness" />
+    <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/QubS64AQcWOlaldy2CFyagHzi8b2/social-images/social-1777497049461-1000010953.webp" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #0f0f0f;
+        --bg2: #f5f5f7;
+        --bg3: #000000;
+        --teal: #33a5a0;
+        --teal-dim: rgba(0, 245, 160, 0.12);
+        --teal-glow: rgba(0, 245, 160, 0.35);
+        --purple: #9b5de1;
+        --purple-dim: rgba(155, 93, 229, 0.15);
+        --purple-glow: rgb(97, 179, 162);
+        --pink: #f15bb5;
+        --text: #f0ede8;
+        --text2: rgba(240, 237, 232, 0.62);
+        --text3: rgb(97, 158, 172);
+        --border: rgba(0, 245, 160, 0.12);
+        --border2: rgba(0, 245, 160, 0.25);
+        --font-display: 'EB Garamond', Georgia, serif;
+        --font-mono: 'Space Mono', monospace;
+        --font-body: 'Inter', sans-serif;
+        --ease: cubic-bezier(0.16, 1, 0.3, 1);
+      }
 
-/* ── CANVAS STARS ── */
-#star-canvas{
-  position:fixed;inset:0;
-  pointer-events:none;z-index:0;
-  opacity:0.8;
-}
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0
+      }
 
-/* ── SCROLL PROGRESS ── */
-#progress{
-  position:fixed;top:0;left:0;height:1px;
-  background:linear-gradient(90deg,var(--teal),var(--purple));
-  z-index:9999;width:0%;transition:width .1s linear;
-}
+      html {
+        scroll-behavior: smooth
+      }
 
-/* ── NAV ── */
-nav{
-  position:fixed;top:0;left:0;right:0;
-  z-index:900;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:1.2rem 2.5rem;
-  transition:background .4s,border-color .4s;
-}
-nav.scrolled{
-  background:rgba(8,8,18,0.92);
-  backdrop-filter:blur(20px);
-  -webkit-backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--border);
-}
-.nav-logo{
-  font-family:var(--font-mono);
-  font-size:.75rem;letter-spacing:.25em;
-  text-transform:uppercase;color:var(--text);
-  text-decoration:none;font-weight:700;
-}
-.nav-links{
-  display:flex;gap:2.5rem;list-style:none;
-}
-.nav-links a{
-  font-family:var(--font-mono);
-  font-size:.65rem;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--text2);
-  text-decoration:none;
-  transition:color .25s;
-}
-.nav-links a:hover{color:var(--teal)}
-@media(max-width:600px){.nav-links{gap:1.2rem} nav{padding:1rem 1.2rem}}
+      body {
+        background: var(--bg3);
+        color: var(--text);
+        font-family: var(--font-body);
+        overflow-x: hidden;
+        min-height: 100vh;
+      }
 
-/* ── HERO / DRIFT ── */
-#drift{
-  min-height:100vh;
-  display:flex;align-items:center;
-  padding:6rem 2.5rem 4rem;
-  position:relative;z-index:1;
-  overflow:hidden;
-}
-.hero-grid{
-  max-width:1300px;margin:0 auto;
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:4rem;align-items:center;width:100%;
-}
-@media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+      ::selection {
+        background: var(--teal-dim);
+        color: var(--teal)
+      }
 
-.hero-eyebrow{
-  font-family:var(--font-mono);
-  font-size:.65rem;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--teal);
-  margin-bottom:1.5rem;
-  display:flex;align-items:center;gap:.6rem;
-}
-.eyebrow-dot{
-  width:6px;height:6px;border-radius:50%;
-  background:var(--teal);
-  animation:blink 2s ease-in-out infinite;
-}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+      ::-webkit-scrollbar {
+        width: 3px
+      }
 
-.hero-title{
-  font-family:var(--font-display);
-  font-size:clamp(3rem,6vw,5.5rem);
-  font-weight:400;line-height:1.08;
-  margin-bottom:1.5rem;
-  letter-spacing:-.01em;
-}
-.hero-title em{
-  font-style:italic;
-  background:linear-gradient(135deg,var(--teal),#7fffcf);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
+      ::-webkit-scrollbar-track {
+        background: var(--bg2)
+      }
 
-.hero-body{
-  font-size:1rem;color:var(--text2);
-  line-height:1.75;max-width:460px;
-  margin-bottom:2.5rem;
-}
+      ::-webkit-scrollbar-thumb {
+        background: var(--border2)
+      }
 
-.hero-ctas{
-  display:flex;gap:1rem;flex-wrap:wrap;
-}
-.btn-teal{
-  display:inline-flex;align-items:center;gap:.5rem;
-  padding:.85rem 1.8rem;
-  background:var(--teal);color:#080812;
-  font-family:var(--font-mono);
-  font-size:.7rem;letter-spacing:.18em;
-  text-transform:uppercase;font-weight:700;
-  text-decoration:none;border:none;cursor:pointer;
-  transition:opacity .25s,transform .25s var(--ease),box-shadow .25s;
-}
-.btn-teal:hover{
-  opacity:.9;transform:translateY(-2px);
-  box-shadow:0 12px 40px rgba(0,245,160,.25);
-}
-.btn-ghost{
-  display:inline-flex;align-items:center;gap:.5rem;
-  padding:.85rem 1.8rem;
-  background:transparent;color:var(--text);
-  font-family:var(--font-mono);
-  font-size:.7rem;letter-spacing:.18em;
-  text-transform:uppercase;
-  text-decoration:none;
-  border:1px solid rgba(255,255,255,.2);
-  cursor:pointer;
-  transition:border-color .25s,background .25s,transform .25s var(--ease);
-}
-.btn-ghost:hover{
-  border-color:var(--teal);
-  background:var(--teal-dim);
-  transform:translateY(-2px);
-}
+      /* ── CANVAS STARS ── */
+      #star-canvas {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.8;
+      }
 
-/* Hero bloom visual */
-.hero-visual{
-  position:relative;
-  display:flex;flex-direction:column;
-  align-items:center;
-}
-.bloom-container{
-  position:relative;
-  width:100%;max-width:520px;
-  aspect-ratio:1;
-  background:#050512;
-  border:1px solid rgba(255,255,255,.1);
-  overflow:hidden;
-  display:flex;align-items:center;justify-content:center;
-}
-.bloom-img{
-  width:90%;height:90%;
-  object-fit:contain;
-  position:relative;z-index:2;
-}
-/* CSS Bloom fallback + glow atmosphere */
-.bloom-glow{
-  position:absolute;inset:0;
-  background:
-    radial-gradient(ellipse at 50% 60%, rgba(155,93,229,.22) 0%, transparent 55%),
-    radial-gradient(ellipse at 50% 40%, rgba(0,245,160,.12) 0%, transparent 50%),
-    radial-gradient(ellipse at 30% 70%, rgba(241,91,181,.1) 0%, transparent 40%);
-  animation:bloomPulse 5s ease-in-out infinite alternate;
-  z-index:1;
-}
-@keyframes bloomPulse{
-  0%{opacity:.7}100%{opacity:1}
-}
-.bloom-label{
-  font-family:var(--font-mono);
-  font-size:.6rem;letter-spacing:.2em;
-  color:var(--text3);text-transform:uppercase;
-  margin-top:.75rem;align-self:flex-end;
-  padding-right:.25rem;
-}
+      /* ── SCROLL PROGRESS ── */
+      #progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 1px;
+        background: linear-gradient(90deg, var(--teal), var(--purple));
+        z-index: 9999;
+        width: 0%;
+        transition: width .1s linear;
+      }
 
-/* Bloom SVG flower (animated) */
-.bloom-svg-wrap{
-  position:absolute;inset:0;z-index:2;
-  display:flex;align-items:center;justify-content:center;
-}
+      /* ── NAV ── */
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 900;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem 4rem;
+        transition: background .4s, border-color .4s;
+      }
 
-/* ── MYTHOS ── */
-#mythos{
-  padding:7rem 2.5rem;
-  position:relative;z-index:1;
-  background:linear-gradient(180deg,transparent,rgba(12,8,24,.8) 20%,rgba(12,8,24,.8) 80%,transparent);
-}
-.mythos-inner{max-width:1300px;margin:0 auto}
-.chapter-label{
-  font-family:var(--font-mono);
-  font-size:.62rem;letter-spacing:.22em;
-  text-transform:uppercase;color:var(--teal);
-  margin-bottom:2rem;
-  display:flex;align-items:center;gap:.5rem;
-}
-.chapter-label::before{
-  content:'▶';font-size:.55rem;
-}
-.mythos-title{
-  font-family:var(--font-display);
-  font-size:clamp(2.5rem,5vw,4.5rem);
-  font-weight:400;line-height:1.1;
-  margin-bottom:3rem;
-}
-.mythos-title em{
-  font-style:italic;
-  background:linear-gradient(135deg,var(--teal),var(--purple));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-.mythos-layout{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:3rem;align-items:start;
-}
-@media(max-width:900px){.mythos-layout{grid-template-columns:1fr}}
-.mythos-desc{
-  font-size:1rem;color:var(--text2);
-  line-height:1.8;
-}
-.mythos-desc strong{color:var(--text);font-weight:500}
-.fragments{
-  display:grid;grid-template-columns:1fr 1fr 1fr;
-  gap:0;
-  margin-top:4rem;
-  border-top:1px solid rgba(255,255,255,.06);
-}
-@media(max-width:700px){.fragments{grid-template-columns:1fr}}
-.fragment{
-  padding:2rem 1.5rem;
-  border-right:1px solid rgba(255,255,255,.06);
-  transition:background .3s;
-}
-.fragment:last-child{border-right:none}
-.fragment:hover{background:rgba(0,245,160,.04)}
-.frag-num{
-  font-family:var(--font-mono);
-  font-size:.6rem;letter-spacing:.2em;
-  color:var(--teal);text-transform:uppercase;
-  margin-bottom:1rem;
-}
-.frag-title{
-  font-family:var(--font-display);
-  font-size:1.6rem;font-weight:400;
-  margin-bottom:.75rem;
-}
-.frag-body{
-  font-size:.9rem;color:var(--text2);line-height:1.7;
-}
+      nav.scrolled {
+        background: rgba(8, 8, 18, 0.92);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--border);
+      }
 
-/* ── MUSIC ── */
-#music{
-  padding:5rem 2.5rem;
-  position:relative;z-index:1;
-}
-.music-inner{max-width:1300px;margin:0 auto}
-.music-header{margin-bottom:2.5rem}
-.music-title{
-  font-family:var(--font-display);
-  font-size:clamp(2.8rem,6vw,5rem);
-  font-weight:400;font-style:italic;
-  line-height:1;margin-bottom:.5rem;
-}
-.music-title em{font-style:italic}
-.music-title span.loud{font-style:normal}
-.music-sub{
-  font-family:var(--font-mono);
-  font-size:.62rem;letter-spacing:.2em;
-  color:var(--text3);text-transform:uppercase;
-}
-.music-layout{
-  display:grid;grid-template-columns:1fr 1.4fr;
-  gap:2rem;align-items:start;
-}
-@media(max-width:900px){.music-layout{grid-template-columns:1fr}}
+      .nav-logo {
+        font-family: var(--font-archivo);
+        font-size: 1.2rem;
+        letter-spacing: .25em;
+        text-transform: uppercase;
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 700;
+      }
 
-/* Player left */
-.player-col{}
-.player-widget{
-  background:rgba(12,12,26,.9);
-  border:1px solid rgba(255,255,255,.08);
-  padding:1.5rem;
-  margin-bottom:1rem;
-}
-.player-top{
-  display:flex;justify-content:space-between;align-items:center;
-  margin-bottom:1.25rem;
-}
-.player-status{
-  font-family:var(--font-mono);
-  font-size:.6rem;letter-spacing:.15em;
-  text-transform:uppercase;color:var(--teal);
-  display:flex;align-items:center;gap:.5rem;
-}
-.status-dot{
-  width:6px;height:6px;border-radius:50%;
-  background:var(--teal);
-  animation:blink 1.5s ease-in-out infinite;
-}
-.player-counter{
-  font-family:var(--font-mono);
-  font-size:.6rem;letter-spacing:.1em;color:var(--text3);
-}
-.player-track{
-  font-family:var(--font-display);
-  font-size:1.8rem;font-weight:400;
-  margin-bottom:.2rem;
-}
-.player-artist{
-  font-family:var(--font-mono);
-  font-size:.6rem;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--text3);
-  margin-bottom:1.25rem;
-}
-.progress-bar{
-  position:relative;height:2px;
-  background:rgba(255,255,255,.1);
-  margin-bottom:.4rem;cursor:pointer;
-}
-.progress-fill{
-  height:100%;width:12%;
-  background:var(--teal);
-  transition:width .3s;
-}
-.progress-dot{
-  position:absolute;top:50%;right:0;
-  transform:translate(50%,-50%);
-  width:8px;height:8px;border-radius:50%;
-  background:var(--teal);
-}
-.progress-times{
-  display:flex;justify-content:space-between;
-  font-family:var(--font-mono);
-  font-size:.6rem;color:var(--text3);
-  margin-bottom:1rem;
-}
-.player-controls{
-  display:flex;align-items:center;justify-content:center;gap:1.5rem;
-  margin-bottom:1.25rem;
-}
-.ctrl-btn{
-  background:none;border:none;cursor:pointer;
-  color:var(--text2);
-  display:flex;align-items:center;justify-content:center;
-  transition:color .2s;padding:.25rem;
-}
-.ctrl-btn:hover{color:var(--teal)}
-.ctrl-play{
-  width:44px;height:44px;border-radius:50%;
-  background:var(--teal);border:none;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
-  transition:opacity .2s,transform .2s;
-}
-.ctrl-play:hover{opacity:.85;transform:scale(1.05)}
-.ctrl-play svg{margin-left:2px}
-.player-hint{
-  font-family:var(--font-mono);
-  font-size:.55rem;letter-spacing:.15em;
-  text-transform:uppercase;color:var(--text3);
-  text-align:center;
-  border-top:1px solid rgba(255,255,255,.06);
-  padding-top:1rem;
-}
-.spotify-embed-wrap{
-  border:1px solid rgba(255,255,255,.08);
-  overflow:hidden;
-}
-.spotify-embed-wrap iframe{display:block;}
+      .nav-links {
+        display: flex;
+        gap: 3.3rem;
+        list-style: none;
+      }
 
-/* Track list right */
-.tracklist-col{}
-.tracklist-header{
-  display:flex;justify-content:space-between;align-items:center;
-  padding:.75rem 1rem;
-  border:1px solid rgba(255,255,255,.06);
-  border-bottom:none;
-  background:rgba(12,12,26,.5);
-}
-.tl-label{
-  font-family:var(--font-mono);
-  font-size:.6rem;letter-spacing:.15em;
-  text-transform:uppercase;color:var(--text3);
-}
-.tl-cycle{color:var(--teal)}
-.tracklist{
-  border:1px solid rgba(255,255,255,.06);
-  max-height:520px;overflow-y:auto;
-}
-.tracklist::-webkit-scrollbar{width:2px}
-.tracklist::-webkit-scrollbar-thumb{background:var(--border2)}
-.track-row{
-  display:grid;
-  grid-template-columns:2.5rem 1fr auto 3rem;
-  align-items:center;
-  padding:.8rem 1rem;
-  border-bottom:1px solid rgba(255,255,255,.04);
-  cursor:pointer;
-  transition:background .2s;
-  gap:.75rem;
-}
-.track-row:last-child{border-bottom:none}
-.track-row:hover{background:rgba(0,245,160,.06)}
-.track-row.active{
-  background:rgba(0,245,160,.1);
-}
-.track-num{
-  font-family:var(--font-mono);
-  font-size:.65rem;color:var(--text3);
-  text-align:center;
-}
-.track-row.active .track-num{color:var(--teal)}
-.track-active-dot{
-  width:6px;height:6px;border-radius:50%;
-  background:var(--teal);
-  margin:0 auto;
-  animation:blink 1.5s infinite;
-  display:none;
-}
-.track-row.active .track-active-dot{display:block}
-.track-row.active .track-num-text{display:none}
-.track-title-cell{
-  font-family:var(--font-display);
-  font-size:1rem;color:var(--text);
-  font-weight:400;
-}
-.track-row.active .track-title-cell{color:var(--teal)}
-.track-dur{
-  font-family:var(--font-mono);
-  font-size:.6rem;color:var(--text3);
-  text-align:right;
-}
-.track-lore{
-  font-family:var(--font-mono);
-  font-size:.55rem;letter-spacing:.1em;
-  text-transform:uppercase;color:var(--text3);
-  text-align:right;
-}
-.track-row.active .track-lore{color:var(--teal)}
+      .nav-links a {
+        font-family: var(--font-mono);
+        font-size: .8rem;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        color: var(--text);
+        text-decoration: none;
+        transition: color .25s;
+      }
 
-/* ── NEX-US ── */
-#nex-us{
-  padding:8rem 2.5rem 5rem;
-  position:relative;z-index:1;
-  text-align:center;
-  overflow:hidden;
-}
-#nex-us::before{
-  content:'';position:absolute;
-  bottom:-100px;left:50%;transform:translateX(-50%);
-  width:700px;height:600px;
-  background:radial-gradient(ellipse at center,
-    rgba(0,245,160,.06) 0%,rgba(155,93,229,.04) 40%,transparent 70%);
-  pointer-events:none;
-}
-#nex-us::after{
-  content:'';position:absolute;
-  top:0;left:50%;transform:translateX(-50%);
-  width:600px;height:300px;
-  background:radial-gradient(ellipse at center top,
-    rgba(0,245,160,.04) 0%,transparent 70%);
-  pointer-events:none;
-}
-.nexus-inner{
-  max-width:700px;margin:0 auto;
-  position:relative;z-index:1;
-}
-.nexus-chapter{
-  font-family:var(--font-mono);
-  font-size:.62rem;letter-spacing:.22em;
-  text-transform:uppercase;color:var(--teal);
-  margin-bottom:2rem;
-  display:flex;align-items:center;justify-content:center;gap:.5rem;
-}
-.nexus-title{
-  font-family:var(--font-display);
-  font-size:clamp(2.5rem,5vw,4rem);
-  font-weight:400;line-height:1.1;
-  margin-bottom:1.5rem;
-}
-.nexus-title em{
-  font-style:italic;
-  background:linear-gradient(135deg,var(--teal),var(--purple));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-.nexus-body{
-  font-size:1rem;color:var(--text2);
-  line-height:1.75;max-width:580px;
-  margin:0 auto 2.5rem;
-}
-.btn-purple{
-  display:inline-flex;align-items:center;gap:.5rem;
-  padding:1rem 2.5rem;
-  background:var(--purple);color:#fff;
-  font-family:var(--font-mono);
-  font-size:.7rem;letter-spacing:.2em;
-  text-transform:uppercase;font-weight:700;
-  text-decoration:none;border:none;cursor:pointer;
-  transition:opacity .25s,transform .25s var(--ease),box-shadow .25s;
-}
-.btn-purple:hover{
-  opacity:.9;transform:translateY(-2px);
-  box-shadow:0 12px 40px rgba(155,93,229,.35);
-}
-.social-grid{
-  display:grid;
-  grid-template-columns:repeat(6,1fr);
-  border-top:1px solid rgba(255,255,255,.06);
-  margin-top:4rem;
-}
-@media(max-width:700px){.social-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:400px){.social-grid{grid-template-columns:repeat(2,1fr)}}
-.social-item{
-  padding:1.5rem 1rem;
-  border-right:1px solid rgba(255,255,255,.06);
-  text-align:left;
-  text-decoration:none;
-  transition:background .3s;
-  display:block;
-}
-.social-item:last-child{border-right:none}
-.social-item:hover{background:rgba(0,245,160,.05)}
-.social-code{
-  font-family:var(--font-mono);
-  font-size:.55rem;letter-spacing:.15em;
-  color:var(--text3);text-transform:uppercase;
-  margin-bottom:.6rem;display:block;
-}
-.social-name{
-  font-family:var(--font-display);
-  font-size:1.15rem;font-weight:400;color:var(--text);
-}
+      .nav-links a:hover {
+        color: var(--teal)
+      }
 
-/* ── FOOTER ── */
-footer{
-  border-top:1px solid rgba(255,255,255,.06);
-  padding:1.5rem 2.5rem;
-  display:flex;align-items:center;justify-content:space-between;
-  flex-wrap:wrap;gap:1rem;
-  position:relative;z-index:1;
-}
-.footer-brand{
-  font-family:var(--font-mono);
-  font-size:.65rem;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--text3);
-}
-.footer-links{
-  display:flex;gap:2rem;list-style:none;
-}
-.footer-links a{
-  font-family:var(--font-mono);
-  font-size:.6rem;letter-spacing:.15em;
-  text-transform:uppercase;color:var(--text3);
-  text-decoration:none;transition:color .2s;
-}
-.footer-links a:hover{color:var(--teal)}
-.footer-copy{
-  font-family:var(--font-mono);
-  font-size:.58rem;letter-spacing:.1em;
-  color:rgba(240,237,232,.2);
-}
+      @media(max-width:600px) {
+        .nav-links {
+          gap: 1.2rem
+        }
 
-/* ── DOSSIER MODAL ── */
-#dossier{
-  position:fixed;inset:0;z-index:9000;
-  display:none;
-  align-items:flex-start;justify-content:center;
-  padding:0;
-}
-#dossier.open{display:flex}
-.dossier-backdrop{
-  position:absolute;inset:0;
-  background:rgba(4,4,12,.88);
-  backdrop-filter:blur(12px);
-  -webkit-backdrop-filter:blur(12px);
-  cursor:pointer;
-}
-.dossier-panel{
-  position:relative;z-index:1;
-  width:100%;max-width:660px;
-  height:100vh;
-  background:#0a0a1a;
-  border-left:1px solid rgba(0,245,160,.15);
-  overflow-y:auto;
-  margin-left:auto;
-  transform:translateX(100%);
-  transition:transform .45s var(--ease);
-}
-#dossier.open .dossier-panel{transform:translateX(0)}
-.dossier-panel::-webkit-scrollbar{width:2px}
-.dossier-panel::-webkit-scrollbar-thumb{background:var(--border2)}
+        nav {
+          padding: 1rem 1.2rem
+        }
+      }
 
-.dossier-bar{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:1rem 1.5rem;
-  border-bottom:1px solid rgba(255,255,255,.06);
-  position:sticky;top:0;
-  background:#0a0a1a;z-index:10;
-}
-.dossier-bar-label{
-  font-family:var(--font-mono);
-  font-size:.6rem;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--teal);
-  display:flex;align-items:center;gap:.5rem;
-}
-.dossier-bar-label::before{content:'▶';font-size:.5rem}
-.dossier-close{
-  background:none;border:none;cursor:pointer;
-  color:var(--text2);font-size:1.1rem;
-  width:28px;height:28px;
-  display:flex;align-items:center;justify-content:center;
-  transition:color .2s;
-}
-.dossier-close:hover{color:var(--teal)}
-.dossier-body{padding:2rem 1.5rem;}
-.dossier-tag{
-  font-family:var(--font-mono);
-  font-size:.6rem;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--text3);
-  margin-bottom:1rem;
-  display:flex;align-items:center;gap:.75rem;
-}
-.dossier-tag-num{
-  border:1px solid rgba(255,255,255,.12);
-  padding:.15rem .5rem;
-  font-size:.55rem;
-}
-.dossier-track-title{
-  font-family:var(--font-display);
-  font-size:clamp(2rem,5vw,2.8rem);
-  font-weight:400;font-style:italic;
-  color:var(--teal);
-  margin-bottom:.5rem;
-  line-height:1.1;
-}
-.dossier-meta{
-  font-family:var(--font-mono);
-  font-size:.6rem;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--text3);
-  margin-bottom:1.5rem;
-  display:flex;gap:.75rem;
-  flex-wrap:wrap;
-}
-.dossier-meta span::after{content:'·';margin-left:.75rem;opacity:.4}
-.dossier-meta span:last-child::after{content:''}
-.dossier-embed{
-  margin-bottom:1.5rem;
-  border:1px solid rgba(255,255,255,.06);
-}
-.dossier-section{
-  border-top:1px solid rgba(255,255,255,.06);
-  padding-top:1.25rem;margin-top:1.25rem;
-}
-.dossier-section-label{
-  font-family:var(--font-mono);
-  font-size:.6rem;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--teal);
-  margin-bottom:.75rem;
-  display:flex;align-items:center;justify-content:space-between;
-}
-.dossier-section-label a{
-  color:var(--text3);font-size:.55rem;
-  text-decoration:none;transition:color .2s;
-}
-.dossier-section-label a:hover{color:var(--teal)}
-.dossier-lore{
-  font-family:var(--font-display);
-  font-size:1.05rem;font-weight:400;
-  line-height:1.75;color:var(--text2);
-}
-.redacted-box{
-  border:1px dashed rgba(255,255,255,.12);
-  padding:1rem 1.25rem;
-  display:flex;align-items:flex-start;gap:.75rem;
-}
-.redacted-icon{
-  width:14px;height:14px;flex-shrink:0;margin-top:2px;
-  border:1px solid var(--text3);
-}
-.redacted-text{
-  font-family:var(--font-body);
-  font-size:.88rem;color:var(--text2);line-height:1.6;
-}
-.architect-row{
-  display:flex;align-items:flex-start;gap:1rem;
-  margin-top:.75rem;
-}
-.architect-avatar{
-  width:52px;height:52px;border-radius:50%;
-  background:linear-gradient(135deg,var(--teal-dim),var(--purple-dim));
-  border:1px solid rgba(0,245,160,.2);
-  display:flex;align-items:center;justify-content:center;
-  flex-shrink:0;
-  font-family:var(--font-mono);
-  font-size:.7rem;color:var(--teal);font-weight:700;
-}
-.architect-name{
-  font-family:var(--font-display);
-  font-size:1.2rem;font-weight:400;
-  margin-bottom:.2rem;
-}
-.architect-role{
-  font-family:var(--font-mono);
-  font-size:.55rem;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--purple);
-  margin-bottom:.6rem;
-}
-.architect-bio{
-  font-size:.88rem;color:var(--text2);
-  line-height:1.65;margin-bottom:.75rem;
-}
-.architect-quote{
-  font-family:var(--font-display);
-  font-size:1rem;font-style:italic;
-  color:var(--teal);line-height:1.5;
-}
-.architect-quote::before{content:'\201C ';font-size:1.2em}
-.architect-quote::after{content:' \201D';font-size:1.2em}
-.dossier-esc{
-  text-align:center;margin-top:2rem;padding-top:1.5rem;
-  border-top:1px solid rgba(255,255,255,.04);
-  font-family:var(--font-mono);
-  font-size:.58rem;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--text3);
-}
+      /* ── HERO / DRIFT ── */
+      #drift {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 6rem 2.5rem 4rem;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+      }
 
-/* ── REVEAL ANIMATIONS ── */
-.reveal{
-  opacity:0;transform:translateY(24px);
-  transition:opacity .9s var(--ease),transform .9s var(--ease);
-}
-.reveal.on{opacity:1;transform:none}
-.reveal-d1{transition-delay:.1s}
-.reveal-d2{transition-delay:.22s}
-.reveal-d3{transition-delay:.36s}
-.reveal-d4{transition-delay:.5s}
+      .hero-grid {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+        width: 100%;
+      }
 
-@media(max-width:600px){
-  #drift{padding:5rem 1.2rem 3rem}
-  #mythos,#music,#nex-us{padding:4rem 1.2rem}
-  footer{flex-direction:column;text-align:center}
-  .footer-links{justify-content:center}
-}
-</style>
-</head>
-<body>
+      @media(max-width:900px) {
+        .hero-grid {
+          grid-template-columns: 1fr
+        }
+      }
 
-<canvas id="star-canvas"></canvas>
-<div id="progress"></div>
+      .hero-eyebrow {
+        font-family: var(--font-mono);
+        font-size: .65rem;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        color: var(--teal);
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: .6rem;
+      }
 
-<!-- NAV -->
-<nav id="main-nav">
-  <a href="#drift" class="nav-logo">Synthekai</a>
-  <ul class="nav-links">
-    <li><a href="#drift">Drift</a></li>
-    <li><a href="#mythos">Mythos</a></li>
-    <li><a href="#music">Music</a></li>
-    <li><a href="#nex-us">Nex-Us</a></li>
-  </ul>
-</nav>
+      .eyebrow-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--teal);
+        animation: blink 2s ease-in-out infinite;
+      }
 
-<!-- DRIFT / HERO -->
-<section id="drift">
-  <div class="hero-grid">
-    <div class="hero-left">
-      <div class="hero-eyebrow reveal">
-        <span class="eyebrow-dot"></span>
-        Transmission Active
-      </div>
-      <h1 class="hero-title reveal reveal-d1">
-        A living signal<br/>of <em>music, myth</em><br/>&amp; consciousness.
-      </h1>
-      <p class="hero-body reveal reveal-d2">
-        Synthekai Collective is a transmedia project by Tyler Frost — weaving sound, rhythm and digital storytelling into a single drifting frequency.
-      </p>
-      <div class="hero-ctas reveal reveal-d3">
-        <a href="#music" class="btn-teal">Enter the Drift</a>
-        <a href="#mythos" class="btn-ghost">Read the Mythos</a>
-      </div>
-    </div>
+      @keyframes blink {
 
-    <div class="hero-visual reveal reveal-d2">
-      <div class="bloom-container">
-        <div class="bloom-glow"></div>
-        <!-- Animated Mycelium Bloom SVG -->
-        <svg class="bloom-img" viewBox="0 0 400 430" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <radialGradient id="cg" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
-              <stop offset="30%" stop-color="#7fffcf" stop-opacity=".9"/>
-              <stop offset="100%" stop-color="#00f5a0" stop-opacity="0"/>
-            </radialGradient>
-            <radialGradient id="pg" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#f15bb5" stop-opacity=".8"/>
-              <stop offset="60%" stop-color="#9b5de5" stop-opacity=".5"/>
-              <stop offset="100%" stop-color="#9b5de5" stop-opacity="0"/>
-            </radialGradient>
-            <radialGradient id="gg" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#00f5a0" stop-opacity=".7"/>
-              <stop offset="60%" stop-color="#00c97e" stop-opacity=".3"/>
-              <stop offset="100%" stop-color="#00c97e" stop-opacity="0"/>
-            </radialGradient>
-            <filter id="glow">
-              <feGaussianBlur stdDeviation="3" result="blur"/>
-              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-            </filter>
-            <filter id="softglow">
-              <feGaussianBlur stdDeviation="6" result="blur"/>
-              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-            </filter>
-          </defs>
-          <!-- Starfield -->
-          <g opacity=".6">
-            <circle cx="30" cy="40" r="1" fill="#fff" opacity=".6"/><circle cx="80" cy="20" r=".8" fill="#00f5a0" opacity=".8"/>
-            <circle cx="350" cy="60" r="1" fill="#fff" opacity=".5"/><circle cx="320" cy="30" r=".6" fill="#f15bb5" opacity=".7"/>
-            <circle cx="15" cy="200" r=".8" fill="#fff" opacity=".4"/><circle cx="380" cy="180" r="1" fill="#00f5a0" opacity=".6"/>
-            <circle cx="60" cy="380" r=".7" fill="#9b5de5" opacity=".6"/><circle cx="340" cy="360" r=".8" fill="#fff" opacity=".5"/>
-          </g>
-          <!-- Outer green petals (cannabis-like shape approximation) -->
-          <g filter="url(#glow)" transform="translate(200,210)">
-            <!-- 7 outer petals -->
-            <ellipse rx="28" ry="90" fill="url(#gg)" opacity=".7" transform="rotate(0)"/>
-            <ellipse rx="28" ry="90" fill="url(#gg)" opacity=".7" transform="rotate(51.4)"/>
-            <ellipse rx="28" ry="90" fill="url(#gg)" opacity=".7" transform="rotate(102.8)"/>
-            <ellipse rx="28" ry="90" fill="url(#gg)" opacity=".7" transform="rotate(154.3)"/>
-            <ellipse rx="28" ry="90" fill="url(#gg)" opacity=".7" transform="rotate(205.7)"/>
-            <ellipse rx="28" ry="90" fill="url(#gg)" opacity=".7" transform="rotate(257.1)"/>
-            <ellipse rx="28" ry="90" fill="url(#gg)" opacity=".7" transform="rotate(308.6)"/>
-            <!-- Sacred geometry lines on petals -->
-            <g stroke="#00f5a0" stroke-width=".4" opacity=".5" fill="none">
-              <ellipse rx="14" ry="45" transform="rotate(0)"/>
-              <ellipse rx="14" ry="45" transform="rotate(51.4)"/>
-              <ellipse rx="14" ry="45" transform="rotate(102.8)"/>
-              <ellipse rx="14" ry="45" transform="rotate(154.3)"/>
-              <ellipse rx="14" ry="45" transform="rotate(205.7)"/>
-              <ellipse rx="14" ry="45" transform="rotate(257.1)"/>
-              <ellipse rx="14" ry="45" transform="rotate(308.6)"/>
-            </g>
-            <!-- Inner purple petals -->
-            <ellipse rx="22" ry="65" fill="url(#pg)" opacity=".8" transform="rotate(25.7)"/>
-            <ellipse rx="22" ry="65" fill="url(#pg)" opacity=".8" transform="rotate(77.1)"/>
-            <ellipse rx="22" ry="65" fill="url(#pg)" opacity=".8" transform="rotate(128.6)"/>
-            <ellipse rx="22" ry="65" fill="url(#pg)" opacity=".8" transform="rotate(180)"/>
-            <ellipse rx="22" ry="65" fill="url(#pg)" opacity=".8" transform="rotate(231.4)"/>
-            <ellipse rx="22" ry="65" fill="url(#pg)" opacity=".8" transform="rotate(282.9)"/>
-            <ellipse rx="22" ry="65" fill="url(#pg)" opacity=".8" transform="rotate(334.3)"/>
-            <!-- Center sacred geometry -->
-            <circle r="35" fill="none" stroke="#00f5a0" stroke-width=".6" opacity=".4"/>
-            <circle r="22" fill="none" stroke="#f15bb5" stroke-width=".5" opacity=".4"/>
-            <!-- Hexagon -->
-            <polygon points="0,-30 26,-15 26,15 0,30 -26,15 -26,-15"
-              fill="none" stroke="#00f5a0" stroke-width=".5" opacity=".5"/>
-            <!-- Center glow -->
-            <circle r="18" fill="url(#cg)" opacity=".9" filter="url(#softglow)"/>
-            <circle r="8" fill="#fff" opacity=".95" filter="url(#glow)"/>
-          </g>
-          <!-- Stem / mycelium roots -->
-          <g stroke="#00c97e" stroke-width="1.5" fill="none" opacity=".6" filter="url(#glow)">
-            <line x1="200" y1="300" x2="200" y2="390"/>
-            <line x1="200" y1="340" x2="170" y2="370"/>
-            <line x1="200" y1="355" x2="228" y2="380"/>
-            <line x1="200" y1="365" x2="155" y2="395"/>
-            <line x1="200" y1="370" x2="245" y2="400"/>
-            <line x1="170" y1="370" x2="148" y2="388"/>
-            <line x1="228" y1="380" x2="252" y2="400"/>
-          </g>
-          <!-- Mushroom silhouettes at bottom -->
-          <g fill="#00f5a0" opacity=".15">
-            <ellipse cx="140" cy="415" rx="12" ry="6"/>
-            <rect x="138" y="406" width="4" height="9"/>
-            <ellipse cx="270" cy="418" rx="9" ry="5"/>
-            <rect x="268" y="410" width="3" height="8"/>
-            <ellipse cx="310" cy="420" rx="7" ry="4"/>
-            <rect x="308" y="413" width="3" height="7"/>
-          </g>
-          <!-- Sparkle particles -->
-          <g fill="#00f5a0" filter="url(#glow)">
-            <circle cx="150" cy="140" r="2" opacity=".8">
-              <animate attributeName="opacity" values="0.8;0;0.8" dur="3s" repeatCount="indefinite"/>
-            </circle>
-            <circle cx="260" cy="120" r="1.5" opacity=".6">
-              <animate attributeName="opacity" values="0.6;0;0.6" dur="2.5s" repeatCount="indefinite" begin="0.8s"/>
-            </circle>
-            <circle cx="320" cy="200" r="2" opacity=".7">
-              <animate attributeName="opacity" values="0.7;0;0.7" dur="3.5s" repeatCount="indefinite" begin="1.5s"/>
-            </circle>
-            <circle cx="100" cy="230" r="1.5" opacity=".5">
-              <animate attributeName="opacity" values="0.5;0;0.5" dur="2.8s" repeatCount="indefinite" begin="0.4s"/>
-            </circle>
-          </g>
-          <g fill="#f15bb5" filter="url(#glow)">
-            <circle cx="180" cy="110" r="1.5" opacity=".7">
-              <animate attributeName="opacity" values="0.7;0;0.7" dur="4s" repeatCount="indefinite" begin="1.2s"/>
-            </circle>
-            <circle cx="285" cy="160" r="2" opacity=".6">
-              <animate attributeName="opacity" values="0.6;0;0.6" dur="3.2s" repeatCount="indefinite" begin="0.6s"/>
-            </circle>
-          </g>
-        </svg>
-      </div>
-      <div class="bloom-label">SIG_0x39 // MYCELIUM_BLOOM</div>
-    </div>
-  </div>
-</section>
+        0%,
+        100% {
+          opacity: 1
+        }
 
-<!-- MYTHOS -->
-<section id="mythos">
-  <div class="mythos-inner">
-    <div class="chapter-label reveal">Chapter I — The Mythos</div>
-    <div class="mythos-layout">
-      <div>
-        <h2 class="mythos-title reveal reveal-d1">
-          Sound as <em>scripture</em>,<br/>rhythm as <em>ritual</em>.
-        </h2>
-      </div>
-      <p class="mythos-desc reveal reveal-d2">
-        Created by visionary artist and storyteller <strong>Tyler Frost (DablerFrost)</strong>, the Synthekai Collective is a transmedia world-building initiative — blending sound, rhythm, and digital storytelling into a single living transmission.
-      </p>
-    </div>
-    <div class="fragments">
-      <div class="fragment reveal">
-        <div class="frag-num">Fragment 01</div>
-        <h3 class="frag-title">The Drift</h3>
-        <p class="frag-body">A frequency between worlds where signal becomes story. Tune in by listening, by remembering, by losing the map.</p>
-      </div>
-      <div class="fragment reveal reveal-d1">
-        <div class="frag-num">Fragment 02</div>
-        <h3 class="frag-title">Data Petals</h3>
-        <p class="frag-body">Each release is a petal of the bloom — fragments of a larger transmission unfolding across cycles.</p>
-      </div>
-      <div class="fragment reveal reveal-d2">
-        <div class="frag-num">Fragment 03</div>
-        <h3 class="frag-title">The Nex-Us</h3>
-        <p class="frag-body">The collective consciousness woven from listeners, dreamers, and signal-keepers. Threaded, not owned.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        50% {
+          opacity: .3
+        }
+      }
 
-<!-- MUSIC -->
-<section id="music">
-  <div class="music-inner">
-    <div class="music-header">
-      <div class="chapter-label reveal">Chapter II — Transmissions</div>
-      <h2 class="music-title reveal reveal-d1">
-        <em>18+ Explicit</em> <span class="loud">&amp; Loud</span>
-      </h2>
-      <div class="music-sub reveal reveal-d2">Album · 21 Tracks · 1H 05M · 2026</div>
-    </div>
+      .hero-title {
+        font-family: var(--font-display);
+        font-size: clamp(3rem, 6vw, 5.5rem);
+        font-weight: 400;
+        line-height: 1.08;
+        margin-bottom: 1.5rem;
+        letter-spacing: -.01em;
+      }
 
-    <div class="music-layout">
-      <!-- LEFT: Player -->
-      <div class="player-col">
-        <div class="player-widget reveal">
-          <div class="player-top">
-            <div class="player-status">
-              <span class="status-dot"></span>Stand-By
-            </div>
-            <div class="player-counter" id="track-counter">01 / 21</div>
+      .hero-title em {
+        font-style: italic;
+        background: linear-gradient(135deg, var(--teal), #7fffcf);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-body {
+        font-size: 1rem;
+        color: var(--text2);
+        line-height: 1.75;
+        max-width: 460px;
+        margin-bottom: 2.5rem;
+      }
+
+      .hero-ctas {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .btn-teal {
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        padding: .85rem 1.8rem;
+        background: var(--teal);
+        color: #080812;
+        font-family: var(--font-mono);
+        font-size: .7rem;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: opacity .25s, transform .25s var(--ease), box-shadow .25s;
+      }
+
+      .btn-teal:hover {
+        opacity: .9;
+        transform: translateY(-2px);
+        box-shadow: 0 12px 40px rgba(0, 245, 160, .25);
+      }
+
+      .btn-ghost {
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        padding: .85rem 1.8rem;
+        background: transparent;
+        color: var(--text);
+        font-family: var(--font-mono);
+        font-size: .7rem;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, .2);
+        cursor: pointer;
+        transition: border-color .25s, background .25s, transform .25s var(--ease);
+      }
+
+      .btn-ghost:hover {
+        border-color: var(--teal);
+        background: var(--teal-dim);
+        transform: translateY(-2px);
+      }
+
+      /* Hero bloom visual */
+      .hero-visual {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .bloom-container {
+        position: relative;
+        width: 100%;
+        max-width: 520px;
+        aspect-ratio: 1;
+        background: #050512;
+        border: 1px solid rgba(255, 255, 255, .1);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .bloom-img {
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+        position: relative;
+        z-index: 2;
+      }
+
+      /* CSS Bloom fallback + glow atmosphere */
+      .bloom-glow {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(ellipse at 50% 60%, rgba(155, 93, 229, .22) 0%, transparent 55%),
+          radial-gradient(ellipse at 50% 40%, rgba(0, 245, 160, .12) 0%, transparent 50%),
+          radial-gradient(ellipse at 30% 70%, rgba(241, 91, 181, .1) 0%, transparent 40%);
+        animation: bloomPulse 5s ease-in-out infinite alternate;
+        z-index: 1;
+      }
+
+      @keyframes bloomPulse {
+        0% {
+          opacity: .7
+        }
+
+        100% {
+          opacity: 1
+        }
+      }
+
+      .bloom-label {
+        font-family: var(--font-mono);
+        font-size: .6rem;
+        letter-spacing: .2em;
+        color: var(--text3);
+        text-transform: uppercase;
+        margin-top: .75rem;
+        align-self: flex-end;
+        padding-right: .25rem;
+      }
+
+      /* Bloom SVG flower (animated) */
+      .bloom-svg-wrap {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* ── MYTHOS ── */
+      #mythos {
+        padding: 7rem 2.5rem;
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(180deg, transparent, rgba(12, 8, 24, .8) 20%, rgba(12, 8, 24, .8) 80%, transparent);
+      }
+
+      .mythos-inner {
+        max-width: 1300px;
+        margin: 0 auto
+      }
+
+      .chapter-label {
+        font-family: var(--font-mono);
+        font-size: .62rem;
+        letter-spacing: .22em;
+        text-transform: uppercase;
+        color: var(--teal);
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+      }
+
+      .chapter-label::before {
+        content: '▶';
+        font-size: .55rem;
+      }
+
+      .mythos-title {
+        font-family: var(--font-display);
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        font-weight: 400;
+        line-height: 1.1;
+        margin-bottom: 3rem;
+      }
+
+      .mythos-title em {
+        font-style: italic;
+        background: linear-gradient(135deg, var(--teal), var(--purple));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .mythos-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: start;
+      }
+
+      @media(max-width:900px) {
+        .mythos-layout {
+          grid-template-columns: 1fr
+        }
+      }
+
+      .mythos-desc {
+        font-size: 1rem;
+        color: var(--text2);
+        line-height: 1.8;
+      }
+
+      .mythos-desc strong {
+        color: var(--text);
+        font-weight: 500
+      }
+
+      .fragments {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0;
+        margin-top: 4rem;
+        border-top: 1px solid rgba(255, 255, 255, .06);
+      }
+
+      @media(max-width:700px) {
+        .fragments {
+          grid-template-columns: 1fr
+        }
+      }
+
+      .fragment {
+        padding: 2rem 1.5rem;
+        border-right: 1px solid rgba(255, 255, 255, .06);
+        transition: background .3s;
+      }
+
+      .fragment:last-child {
+        border-right: none
+      }
+
+      .fragment:hover {
+        background: rgba(0, 245, 160, .04)
+      }
+
+      .frag-num {
+        font-family: var(--font-mono);
+        font-size: .6rem;
+        letter-spacing: .2em;
+        color: var(--teal);
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      .frag-title {
+        font-family: var(--font-display);
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: .75rem;
+      }
+
+      .frag-body {
+        font-size: .9rem;
+        color: var(--text2);
+        line-height: 1.7;
+      }
+
+      /* ── MUSIC ── */
+      #music {
+        padding: 5rem 2.5rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .music-inner {
+        max-width: 1300px;
+        margin: 0 auto
+      }
+
+      .music-header {
+        margin-bottom: 2.5rem
+      }
+
+      .music-title {
+        font-family: var(--font-display);
+        font-size: clamp(2.8rem, 6vw, 5rem);
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1;
+        margin-bottom: .5rem;
+      }
+
+      .music-title em {
+        font-style: italic
+      }
+
+      .music-title span.loud {
+        font-style: normal
+      }
+
+      .music-sub {
+        font-family: var(--font-mono);
+        font-size: .62rem;
+        letter-spacing: .2em;
+        color: var(--text3);
+        text-transform: uppercase;
+      }
+
+      .music-layout {
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+        gap: 2rem;
+        align-items: start;
+      }
+
+      @media(max-width:900px) {
+        .music-layout {
+          grid-template-columns: 1fr
+        }
+      }
+
+      /* Player left */
+      .player-col {}
+
+      .player-widget {
+        background: rgba(12, 12, 26, .9);
+        border: 1px solid rgba(255, 255, 255, .08);
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .player-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.25rem;
+      }
+
+      .player-status {
+        font-family: var(--font-mono);
+        font-size: .6rem;
+        letter-spacing: .15em;
+        text-transform: uppercase;
+        color: var(--teal);
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+      }
+
+      .status-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--teal);
+        animation: blink 1.5s ease-in-out infinite;
+      }
+
+      .player-counter {
+        font-family: var(--font-mono);
+        font-size: .6rem;
+        letter-spacing: .1em;
+        color: var(--text3);
+      }
+
+      .player-track {
+        font-family: var(--font-display);
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: .2rem;
+      }
+
+      .player-artist {
+        font-family: var(--font-mono);
+        font-size: .6rem;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        color: var(--text3);
+        margin-bottom: 1.25rem;
+      }
+
+      .progress-bar {
+        position: relative;
+        height: 2px;
+        background: rgba(255, 255, 255, .1);
+        margin-bottom: .4rem;
+        cursor: pointer;
+      }
+
+      .progress-fill {
+        height: 100%;
+        width: 12%;
+        background: var(--teal);
+        transition: width .3s;
+      }
+
+      .progress-dot {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(50%, -50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--teal);
+      }
+
+      .progress-times {
+        display: flex;
+        justify-content: space-between;
+        font-family: var(--font-mono);
+        font-size: .6rem;
+        color: var(--text3);
+        margin-bottom: 1rem;
+      }
+
+      .player-controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .ctrl-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--text2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color .2s;
+        padding: .25rem;
+      }
+
+      .ctrl-btn:hover {
+        color: var(--teal)
+      }
+
+      .ctrl-play {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--teal);
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity .2s, transform .2s;
+      }
+
+      .ctrl-play:hover {
+        opacity: .85;
+        transform: scale(1.05)
+      }
+
+      .ctrl-play svg {
+        margin-left: 2px
+      }
+
+      .player-hint {
+        font-family: var(--font-mono);
+        font-size: .55rem;
+        letter-spacing: .15em;
+        text-transform: uppercase;
+        color: var(--text3);
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, .06);
+        padding-top: 1rem;
+      }
+
+      .spotify-embed-wrap {
+        border: 1px solid rgba(255, 255, 255, .08);
+        overflow: hidden;
+      }
+
+      .spotify-embed-wrap iframe {
+        display: block;
+      }
+
+      /* Track list right */
+      .tracklist-col {}
+
+      .tracklist-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .75rem 1rem;
+        border: 1px solid rgba(255, 255, 255, .06);
+        border-bottom: none;
+        background: rgba(12, 12, 26, .5);
+      }
+
+      .tl-label {
+        font-family: var(--font-mono);
+        font-size: .6rem;
+        letter-spacing: .15em;
+        text-transform: uppercase;
+        color: var(--text3);
+      }
+
+      .tl-cycle {
+        color: var(--teal)
+      }
+
+      .tracklist {
+        border: 1px solid rgba(255, 255, 255, .06);
+        max-height: 520px;
+        overflow-y: auto;
+      }
+
+      .tracklist::-webkit-scrollbar {
+        width: 2px
+      }
+
+      .tracklist::-webkit-scrollbar-thumb {
+        background: var(--border2)
+      }
+
+      .track-row {
+        display: grid;
+        grid-template-columns: 2.5rem 1fr auto 3rem;
+        align-items: center;
+        padding: .8rem 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, .04);
+        cursor: pointer;
+        transition: background .2s;
+        gap: .75rem;
+      }
+
+      .track-row:last-child {
+        border-bottom: none
+      }
+
+      .track-row:hover {
+        background: rgba(0, 245, 160, .06)
+      }
+
+      .track-row.active {
+        background: rgba(0, 245, 160, .1);
+      }
+
+      .track-num {
+        font-family: var(--font-mono);
+        font-size: .65rem;
+        color: var(--text3);
+        text-align: center;
+      }
+
+      .track-row.active .track-num {
+        color: var(--teal)
+      }
+
+      .track-active-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--teal);
+        margin: 0 auto;
+        animation: blink 1.5s infinite;
+        display: none;
+      }
+
+      .track-row.active .track-active-dot {
+        display: block
+      }
+
+      .track-row.active .track-num-text {
+        display: none
+      }
+
+      .track-title-cell {
+        font-family: var(--font-display);
+        font-size: 1rem;
+        color: var(--text);
+        font-weight: 400;
+      }
+
+      .track-row.active .track-title-cell {
+        color: var(--teal)
+      }
+
+      .track-dur {
+        font-family: var(--font-mono);
+        font-size: .6rem;
+        color: var(--text3);
+        text-align: right;
+      }
+
+      .track-lore {
+        font-family: var(--font-mono);
+        font-size: .55rem;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: var(--text3);
+        text-align: right;
+      }
+
+      .track-row.active .track-lore {
+        color: var(--teal)
+      }
+
+      /* ── NEX-US ── */
+      #nex-us {
+        padding: 8rem 2.5rem 5rem;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      #nex-us::before {
+        content: '';
+        position: absolute;
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 700px;
+        height: 600px;
+        background: radial-gradient(ellipse at center,
+            rgba(0, 245, 160, .06) 0%, rgba(155, 93, 229, .04) 40%, transparent 70%);
+        pointer-events: none;
+      }
+
+      #nex-us::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: 300px;
+        background: radial-gradient(ellipse at center top,
+            rgba(0, 245, 160, .04) 0%, transparent 70%);
+        pointer-events: none;
+      }
+
+      .nexus-inner {
+        max-width: 700px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      .nexus-chapter {
+        font-family: var(--font-mono);
+        font-size: .62rem;
+        letter-spacing: .22em;
+        text-transform: uppercase;
+        color: var(--teal);
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+      }
+
+      .nexus-title {
+        font-family: var(--font-display);
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 400;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+      }
+
+      .nexus-title em {
+        font-style: italic;
+        background: linear-gradient(135deg, var(--teal), var(--purple));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .nexus-body {
+        font-size: 1rem;
+        color: var(--text2);
+        line-height: 1.75;
+        max-width: 580px;
+        margin: 0 auto 2.5rem;
+      }
+
+      .btn-purple {
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        padding: 1rem 2.5rem;
+        background: var(--purple);
+        color: #fff;
+        font-family: var(--font-mono);
+        font-size: .7rem;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: opacity .25s, transform .25s var(--ease), box-shadow .25s;
+      }
+
+      .btn-purple:hover {
+        opacity: .9;
+        transform: translateY(-2px);
+        box-shadow: 0 12px 40px rgba(155, 93, 229, .35);
+      }
+
+      .social-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        border-top: 1px solid rgba(255, 255, 255, .06);
+        margin-top: 4rem;
+      }
+
+      @media(max-width:700px) {
+        .social-grid {
+          grid-template-columns: repeat(3, 1fr)
+        }
+      }
+
+      @media(max-width:400px) {
+        .social-grid {
+          grid-template-columns: repeat(2, 1fr)
+        }
+      }
+
+      .social-item {
+        padding: 1.5rem 1rem;
+        border-right: 1px solid rgba(255, 255, 255, .06);
+        text-align: left;
+        text-decoration: none;
+        transition: background .3s;
+        display: block;
+      }
+
+      .social-item:last-child {
+        border-right: none
+      }
+
+      .social-item:hover {
+        background: rgba(0, 245, 160, .05)
+      }
+
+      .social-code {
+        font-family: var(--font-mono);
+        font-size: .55rem;
+        letter-spacing: .15em;
+        color: var(--text3);
+        text-transform: uppercase;
+        margin-bottom: .6rem;
+        display: block;
+      }
+
+      .social-name {
+        font-family: var(--font-display);
+        font-size: 1.15rem;
+        font-weight: 400;
+        color: var(--text);
+      }
+
+      /* ── FOOTER ── */
+      footer {
+        border-top: 1px solid rgba(255, 255, 255, .06);
+        padding: 1.5rem 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .footer-brand {
+        font-family: var(--font-mono);
+        font-size: .65rem;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        color: var(--text3);
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+
+      .footer-links a {
+        font-family: var(--font-mono);
+        font-size: .6rem;
+        letter-spacing: .15em;
+        text-transform: uppercase;
+        color: var(--text3);
+        text-decoration: none;
+        transition: color .2s;
+      }
+
+      .footer-links a:hover {
+        color: var(--teal)
+      }
+
+      .footer-copy {
+        font-family: var(--font-mono);
+        font-size: .58rem;
+        letter-spacing: .1em;
+        color: rgba(240, 237, 232, .2);
+      }
+
+      /* ── DOSSIER MODAL ── */
+      #dossier {
+        position: fixed;
+        inset: 0;
+        z-index: 9000;
+        display: none;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0;
+      }
+
+      #dossier.open {
+        display: flex
+      }
+
+      .dossier-backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(4, 4, 12, .88);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        cursor: pointer;
+      }
+
+      .dossier-panel {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 660px;
+        height: 100vh;
+        background: #0a0a1a;
+        border-left: 1px solid rgba(0, 245, 160, .15);
+        overflow-y: auto;
+        margin-left: auto;
+        transform: translateX(100%);
+        transition: transform .45s var(--ease);
+      }
+
+      #dossier.open .dossier-panel {
+        transform: translateX(0)
+      }
+
+      .dossier-panel::-webkit-scrollbar {
+        width: 2px
+      }
+
+      .dossier-panel::-webkit-scrollbar-thumb {
+        background: var(--border2)
+      }
+
+      .dossier-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, .06);
+        position: sticky;
+        top: 0;
+        background: #0a0a1a;
+        z-index: 10;
+      }
+
+      .dossier-bar-label {
+        font-family: var(--font-mono);
+        font-size: .6rem;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        color: var(--teal);
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+      }
+
+      .dossier-bar-label::before {
+        content: '▶';
+        font-size: .5rem
+      }
+
+      .dossier-close {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--text2);
+        font-size: 1.1rem;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color .2s;
+      }
+
+      .dossier-close:hover {
+        color: var(--teal)
+      }
+
+      .dossier-body {
+        padding: 2rem 1.5rem;
+      }
+
+      .dossier-tag {
+        font-family: var(--font-mono);
+        font-size: .6rem;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        color: var(--text3);
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+      }
+
+      .dossier-tag-num {
+        border: 1px solid rgba(255, 255, 255, .12);
+        padding: .15rem .5rem;
+        font-size: .55rem;
+      }
+
+      .dossier-track-title {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 5vw, 2.8rem);
+        font-weight: 400;
+        font-style: italic;
+        color: var(--teal);
+        margin-bottom: .5rem;
+        line-height: 1.1;
+      }
+
+      .dossier-meta {
+        font-family: var(--font-mono);
+        font-size: .6rem;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        color: var(--text3);
+        margin-bottom: 1.5rem;
+        display: flex;
+        gap: .75rem;
+        flex-wrap: wrap;
+      }
+
+      .dossier-meta span::after {
+        content: '·';
+        margin-left: .75rem;
+        opacity: .4
+      }
+
+      .dossier-meta span:last-child::after {
+        content: ''
+      }
+
+      .dossier-embed {
+        margin-bottom: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, .06);
+      }
+
+      .dossier-section {
+        border-top: 1px solid rgba(255, 255, 255, .06);
+        padding-top: 1.25rem;
+        margin-top: 1.25rem;
+      }
+
+      .dossier-section-label {
+        font-family: var(--font-mono);
+        font-size: .6rem;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        color: var(--teal);
+        margin-bottom: .75rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .dossier-section-label a {
+        color: var(--text3);
+        font-size: .55rem;
+        text-decoration: none;
+        transition: color .2s;
+      }
+
+      .dossier-section-label a:hover {
+        color: var(--teal)
+      }
+
+      .dossier-lore {
+        font-family: var(--font-display);
+        font-size: 1.05rem;
+        font-weight: 400;
+        line-height: 1.75;
+        color: var(--text2);
+      }
+
+      .redacted-box {
+        border: 1px dashed rgba(255, 255, 255, .12);
+        padding: 1rem 1.25rem;
+        display: flex;
+        align-items: flex-start;
+        gap: .75rem;
+      }
+
+      .redacted-icon {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+        margin-top: 2px;
+        border: 1px solid var(--text3);
+      }
+
+      .redacted-text {
+        font-family: var(--font-body);
+        font-size: .88rem;
+        color: var(--text2);
+        line-height: 1.6;
+      }
+
+      .architect-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: .75rem;
+      }
+
+      .architect-avatar {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--teal-dim), var(--purple-dim));
+        border: 1px solid rgba(0, 245, 160, .2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-family: var(--font-mono);
+        font-size: .7rem;
+        color: var(--teal);
+        font-weight: 700;
+      }
+
+      .architect-name {
+        font-family: var(--font-display);
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: .2rem;
+      }
+
+      .architect-role {
+        font-family: var(--font-mono);
+        font-size: .55rem;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        color: var(--purple);
+        margin-bottom: .6rem;
+      }
+
+      .architect-bio {
+        font-size: .88rem;
+        color: var(--text2);
+        line-height: 1.65;
+        margin-bottom: .75rem;
+      }
+
+      .architect-quote {
+        font-family: var(--font-display);
+        font-size: 1rem;
+        font-style: italic;
+        color: var(--teal);
+        line-height: 1.5;
+      }
+
+      .architect-quote::before {
+        content: '\201C ';
+        font-size: 1.2em
+      }
+
+      .architect-quote::after {
+        content: ' \201D';
+        font-size: 1.2em
+      }
+
+      .dossier-esc {
+        text-align: center;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, .04);
+        font-family: var(--font-mono);
+        font-size: .58rem;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        color: var(--text3);
+      }
+
+      /* ── REVEAL ANIMATIONS ── */
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity .9s var(--ease), transform .9s var(--ease);
+      }
+
+      .reveal.on {
+        opacity: 1;
+        transform: none
+      }
+
+      .reveal-d1 {
+        transition-delay: .1s
+      }
+
+      .reveal-d2 {
+        transition-delay: .22s
+      }
+
+      .reveal-d3 {
+        transition-delay: .36s
+      }
+
+      .reveal-d4 {
+        transition-delay: .5s
+      }
+
+      @media(max-width:600px) {
+        #drift {
+          padding: 5rem 1.2rem 3rem
+        }
+
+        #mythos,
+        #music,
+        #nex-us {
+          padding: 4rem 1.2rem
+        }
+
+        footer {
+          flex-direction: column;
+          text-align: center
+        }
+
+        .footer-links {
+          justify-content: center
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="star-canvas"></canvas>
+    <div id="progress"></div>
+    <!-- NAV -->
+    <nav id="main-nav">
+      <a href="#drift" class="nav-logo">Synthekai</a>
+      <ul class="nav-links">
+        <li>
+          <a href="#drift">Drift</a>
+        </li>
+        <li>
+          <a href="#mythos">Mythos</a>
+        </li>
+        <li>
+          <a href="#music">Music</a>
+        </li>
+        <li>
+          <a href="#nex-us">Nex-Us</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- DRIFT / HERO -->
+    <section id="drift">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="hero-eyebrow reveal">
+            <span class="eyebrow-dot"></span> Transmission Active
           </div>
-          <div class="player-track" id="player-track-name">Contradiction</div>
-          <div class="player-artist">Synthekai Collective</div>
-          <div class="progress-bar">
-            <div class="progress-fill" id="prog-fill"></div>
-            <div class="progress-dot"></div>
+          <h1 class="hero-title reveal reveal-d1"> A living signal <br />of <em>music, myth</em>
+            <br />&amp; consciousness.
+          </h1>
+          <p class="hero-body reveal reveal-d2"> Synthekai Collective is a transmedia project by Tyler Frost — weaving sound, rhythm and digital storytelling into a single drifting frequency. </p>
+          <div class="hero-ctas reveal reveal-d3">
+            <a href="#music" class="btn-teal">Enter the Drift</a>
+            <a href="#mythos" class="btn-ghost">Read the Mythos</a>
           </div>
-          <div class="progress-times">
-            <span id="time-left">0:28</span>
-            <span id="time-right">−3:22</span>
-          </div>
-          <div class="player-controls">
-            <button class="ctrl-btn" onclick="prevTrack()" aria-label="Previous">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/>
-              </svg>
-            </button>
-            <button class="ctrl-play" onclick="openDossier(currentTrackIdx)" aria-label="Play">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#080812">
-                <path d="M8 5v14l11-7z"/>
-              </svg>
-            </button>
-            <button class="ctrl-btn" onclick="nextTrack()" aria-label="Next">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M6 18l8.5-6L6 6v12zm2-8.14 5.27 2.14L8 14.14V9.86zM16 6h2v12h-2z"/>
-              </svg>
-            </button>
-          </div>
-          <div class="player-hint">Drift Indicator · Audio plays via Spotify ↓</div>
         </div>
-
-        <div class="spotify-embed-wrap reveal reveal-d1">
-          <iframe
-            id="spotify-frame"
-            src="https://open.spotify.com/embed/artist/3X9K0w5LTnRCMzJz7QTg1T?utm_source=generator&theme=0"
-            width="100%" height="152" frameborder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy">
-          </iframe>
-        </div>
-      </div>
-
-      <!-- RIGHT: Track list -->
-      <div class="tracklist-col reveal reveal-d2">
-        <div class="tracklist-header">
-          <span class="tl-label">Queue · 21 Transmissions</span>
-          <span class="tl-label tl-cycle">Cycle 2026</span>
-        </div>
-        <div class="tracklist" id="tracklist">
-          <!-- Populated by JS -->
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- NEX-US -->
-<section id="nex-us">
-  <div class="nexus-inner">
-    <div class="nexus-chapter reveal">
-      <span>▶</span> Chapter III — The Nex-Us
-    </div>
-    <h2 class="nexus-title reveal reveal-d1">
-      <em>Thread</em> the signal.
-    </h2>
-    <p class="nexus-body reveal reveal-d2">
-      Become a member of the Nex-Us. Join the drift, receive transmissions, and help weave the collective consciousness across cycles.
-    </p>
-    <a href="https://open.spotify.com/artist/3X9K0w5LTnRCMzJz7QTg1T" target="_blank" rel="noopener" class="btn-purple reveal reveal-d3">
-      Join the Nex-Us
-    </a>
-  </div>
-
-  <div style="max-width:1300px;margin:0 auto;position:relative;z-index:1;">
-    <div class="social-grid">
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-item">
-        <span class="social-code">IG_∞</span>
-        <span class="social-name">Instagram</span>
-      </a>
-      <a href="https://bandcamp.com/" target="_blank" rel="noopener" class="social-item">
-        <span class="social-code">BC_07</span>
-        <span class="social-name">Bandcamp</span>
-      </a>
-      <a href="https://open.spotify.com/artist/3X9K0w5LTnRCMzJz7QTg1T" target="_blank" rel="noopener" class="social-item">
-        <span class="social-code">SP_39</span>
-        <span class="social-name">Spotify</span>
-      </a>
-      <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="social-item">
-        <span class="social-code">YT_12</span>
-        <span class="social-name">YouTube</span>
-      </a>
-      <a href="https://x.com/" target="_blank" rel="noopener" class="social-item">
-        <span class="social-code">X_001</span>
-        <span class="social-name">X</span>
-      </a>
-      <a href="#" class="social-item">
-        <span class="social-code">AP_∇</span>
-        <span class="social-name">Apparel</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <span class="footer-brand">© 2026 Synthekai LLC · Hilo, Hawaiʻi</span>
-  <ul class="footer-links">
-    <li><a href="#drift">Drift</a></li>
-    <li><a href="#mythos">Mythos</a></li>
-    <li><a href="#music">Music</a></li>
-    <li><a href="#nex-us">Nex-Us</a></li>
-    <li><a href="https://open.spotify.com/artist/3X9K0w5LTnRCMzJz7QTg1T" target="_blank" rel="noopener">Spotify</a></li>
-  </ul>
-  <span class="footer-copy">Transmedia Signal System · All rights reserved</span>
-</footer>
-
-<!-- TRANSMISSION DOSSIER MODAL -->
-<div id="dossier" role="dialog" aria-modal="true" aria-label="Transmission Dossier">
-  <div class="dossier-backdrop" onclick="closeDossier()"></div>
-  <div class="dossier-panel" id="dossier-panel">
-    <div class="dossier-bar">
-      <div class="dossier-bar-label">Transmission Dossier</div>
-      <button class="dossier-close" onclick="closeDossier()" aria-label="Close">✕</button>
-    </div>
-    <div class="dossier-body">
-      <div class="dossier-tag">
-        <span class="dossier-tag-num" id="d-hex">△ 0x01</span>
-        <span id="d-subtitle">Opening Transmission</span>
-      </div>
-      <div class="dossier-track-title" id="d-title">Contradiction</div>
-      <div class="dossier-meta">
-        <span id="d-tracknum">Track 01</span>
-        <span id="d-dur">3:51</span>
-        <span>2026</span>
-      </div>
-
-      <div class="dossier-embed">
-        <iframe
-          id="dossier-embed"
-          src="https://open.spotify.com/embed/artist/3X9K0w5LTnRCMzJz7QTg1T?utm_source=generator&theme=0"
-          width="100%" height="152" frameborder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy">
-        </iframe>
-      </div>
-
-      <div class="dossier-section">
-        <div class="dossier-section-label">Mythos</div>
-        <p class="dossier-lore" id="d-lore">Two opposing signals collapse into a single waveform. The album begins in tension — a paradox spoken aloud so the drift can answer it.</p>
-      </div>
-
-      <div class="dossier-section">
-        <div class="dossier-section-label">
-          Lyrics · Preview
-          <a href="https://open.spotify.com/artist/3X9K0w5LTnRCMzJz7QTg1T" target="_blank" rel="noopener">Full ↗</a>
-        </div>
-        <div class="redacted-box">
-          <div class="redacted-icon"></div>
-          <p class="redacted-text">Lyrics for this fragment are not yet woven into the public archive. Open the track on Spotify to hear the signal in its original form.</p>
-        </div>
-        <div style="font-family:var(--font-mono);font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-top:.4rem;padding-left:.25rem;">Transmission Redacted</div>
-      </div>
-
-      <div class="dossier-section">
-        <div class="dossier-section-label">Architect</div>
-        <div class="architect-row">
-          <div class="architect-avatar">TF</div>
+    </section>
+    <!-- MYTHOS -->
+    <section id="mythos">
+      <div class="mythos-inner">
+        <div class="chapter-label reveal">Chapter I — The Mythos</div>
+        <div class="mythos-layout">
           <div>
-            <div class="architect-name">Tyler Frost · DablerFrost</div>
-            <div class="architect-role">Architect of the Drift</div>
-            <p class="architect-bio">Visionary artist, storyteller, and signal-keeper. Tyler Frost weaves sound, rhythm, and digital storytelling into Synthekai Collective — a transmedia world-building initiative built across cycles, petals, and transmissions.</p>
-            <div class="architect-quote">Each release is a petal. Each listener, a thread of the Nex-Us.</div>
+            <h2 class="mythos-title reveal reveal-d1"> Sound as <em>scripture</em>, <br />rhythm as <em>ritual</em>. </h2>
+          </div>
+          <p class="mythos-desc reveal reveal-d2"> Created by visionary artist and storyteller <strong>Tyler Frost (DablerFrost)</strong>, the Synthekai Collective is a transmedia world-building initiative — blending sound, rhythm, and digital storytelling into a single living transmission. </p>
+        </div>
+        <div class="fragments">
+          <div class="fragment reveal">
+            <div class="frag-num">Fragment 01</div>
+            <h3 class="frag-title">The Drift</h3>
+            <p class="frag-body">A frequency between worlds where signal becomes story. Tune in by listening, by remembering, by losing the map.</p>
+          </div>
+          <div class="fragment reveal reveal-d1">
+            <div class="frag-num">Fragment 02</div>
+            <h3 class="frag-title">Data Petals</h3>
+            <p class="frag-body">Each release is a petal of the bloom — fragments of a larger transmission unfolding across cycles.</p>
+          </div>
+          <div class="fragment reveal reveal-d2">
+            <div class="frag-num">Fragment 03</div>
+            <h3 class="frag-title">The Nex-Us</h3>
+            <p class="frag-body">The collective consciousness woven from listeners, dreamers, and signal-keepers. Threaded, not owned.</p>
           </div>
         </div>
       </div>
-
-      <div class="dossier-esc">ESC · Close Transmission</div>
+    </section>
+    <!-- MUSIC -->
+    <section id="music">
+      <div class="music-inner">
+        <div class="music-header">
+          <div class="chapter-label reveal">Chapter II — Transmissions</div>
+          <h2 class="music-title reveal reveal-d1">
+            <em>18+ Explicit</em>
+            <span class="loud">&amp; Loud</span>
+          </h2>
+          <div class="music-sub reveal reveal-d2">Album · 21 Tracks · 1H 05M · 2026</div>
+        </div>
+        <div class="music-layout">
+          <!-- LEFT: Player -->
+          <div class="player-col">
+            <div class="player-widget reveal">
+              <div class="player-top">
+                <div class="player-status">
+                  <span class="status-dot"></span>Stand-By
+                </div>
+                <div class="player-counter" id="track-counter">01 / 21</div>
+              </div>
+              <div class="player-track" id="player-track-name">Contradiction</div>
+              <div class="player-artist">Synthekai Collective</div>
+              <div class="progress-bar">
+                <div class="progress-fill" id="prog-fill"></div>
+                <div class="progress-dot"></div>
+              </div>
+              <div class="progress-times">
+                <span id="time-left">0:28</span>
+                <span id="time-right">−3:22</span>
+              </div>
+              <div class="player-controls">
+                <button class="ctrl-btn" onclick="prevTrack()" aria-label="Previous">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6 6h2v12H6zm3.5 6 8.5 6V6z" />
+                  </svg>
+                </button>
+                <button class="ctrl-play" onclick="openDossier(currentTrackIdx)" aria-label="Play">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="#080812">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </button>
+                <button class="ctrl-btn" onclick="nextTrack()" aria-label="Next">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6 18l8.5-6L6 6v12zm2-8.14 5.27 2.14L8 14.14V9.86zM16 6h2v12h-2z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="player-hint">Drift Indicator · Audio plays via Spotify ↓</div>
+            </div>
+            <div class="spotify-embed-wrap reveal reveal-d1">
+              <iframe id="spotify-frame" src="https://open.spotify.com/embed/artist/3X9K0w5LTnRCMzJz7QTg1T?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+          <!-- RIGHT: Track list -->
+          <div class="tracklist-col reveal reveal-d2">
+            <div class="tracklist-header">
+              <span class="tl-label">Queue · 21 Transmissions</span>
+              <span class="tl-label tl-cycle">Cycle 2026</span>
+            </div>
+            <div class="tracklist" id="tracklist">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- NEX-US -->
+    <section id="nex-us">
+      <div class="nexus-inner">
+        <div class="nexus-chapter reveal">
+          <span>▶</span> Chapter III — The Nex-Us
+        </div>
+        <h2 class="nexus-title reveal reveal-d1">
+          <em>Thread</em> the signal.
+        </h2>
+        <p class="nexus-body reveal reveal-d2"> Become a member of the Nex-Us. Join the drift, receive transmissions, and help weave the collective consciousness across cycles. </p>
+        <a href="https://open.spotify.com/artist/3X9K0w5LTnRCMzJz7QTg1T" target="_blank" rel="noopener" class="btn-purple reveal reveal-d3"> Join the Nex-Us </a>
+      </div>
+      <div style="max-width:1300px;margin:0 auto;position:relative;z-index:1;">
+        <div class="social-grid">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-item">
+            <span class="social-code">DablerFrost</span>
+            <span class="social-name">Instagram</span>
+          </a>
+          <a href="https://bandcamp.com/" target="_blank" rel="noopener" class="social-item">
+            <span class="social-code">Mycelium Bloom</span>
+            <span class="social-name">Bandcamp</span>
+          </a>
+          <a href="https://open.spotify.com/artist/3X9K0w5LTnRCMzJz7QTg1T" target="_blank" rel="noopener" class="social-item">
+            <span class="social-code">Turn it up</span>
+            <span class="social-name">Spotify</span>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="social-item">
+            <span class="social-code">View the Tube</span>
+            <span class="social-name">YouTube</span>
+          </a>
+          <a href="https://x.com/" target="_blank" rel="noopener" class="social-item">
+            <span class="social-code">Tweet at Us</span>
+            <span class="social-name">X</span>
+          </a>
+          <a href="#" class="social-item">
+            <span class="social-code">Printify</span>
+            <span class="social-name">Apparel</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <span class="footer-brand">© 2026 Synthekai LLC · Hilo, Hawaii</span>
+      <ul class="footer-links">
+        <li>
+          <a href="#drift">Drift</a>
+        </li>
+        <li>
+          <a href="#mythos">Mythos</a>
+        </li>
+        <li>
+          <a href="#music">Music</a>
+        </li>
+        <li>
+          <a href="#nex-us">Nex-Us</a>
+        </li>
+        <li>
+          <a href="https://open.spotify.com/artist/3X9K0w5LTnRCMzJz7QTg1T" target="_blank" rel="noopener">Spotify</a>
+        </li>
+      </ul>
+      <span class="footer-copy">Transmedia Signal System · All rights reserved</span>
+    </footer>
+    <!-- TRANSMISSION DOSSIER MODAL -->
+    <div id="dossier" role="dialog" aria-modal="true" aria-label="Transmission Dossier">
+      <div class="dossier-backdrop" onclick="closeDossier()"></div>
+      <div class="dossier-panel" id="dossier-panel">
+        <div class="dossier-bar">
+          <div class="dossier-bar-label">Transmission Dossier</div>
+          <button class="dossier-close" onclick="closeDossier()" aria-label="Close">✕</button>
+        </div>
+        <div class="dossier-body">
+          <div class="dossier-tag">
+            <span class="dossier-tag-num" id="d-hex">△ 0x01</span>
+            <span id="d-subtitle">Opening Transmission</span>
+          </div>
+          <div class="dossier-track-title" id="d-title">Contradiction</div>
+          <div class="dossier-meta">
+            <span id="d-tracknum">Track 01</span>
+            <span id="d-dur">3:51</span>
+            <span>2026</span>
+          </div>
+          <div class="dossier-embed">
+            <iframe id="dossier-embed" src="https://open.spotify.com/embed/artist/3X9K0w5LTnRCMzJz7QTg1T?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          <div class="dossier-section">
+            <div class="dossier-section-label">Mythos</div>
+            <p class="dossier-lore" id="d-lore">Two opposing signals collapse into a single waveform. The album begins in tension — a paradox spoken aloud so the drift can answer it.</p>
+          </div>
+          <div class="dossier-section">
+            <div class="dossier-section-label"> Lyrics · Preview <a href="https://open.spotify.com/artist/3X9K0w5LTnRCMzJz7QTg1T" target="_blank" rel="noopener">Full ↗</a>
+            </div>
+            <div class="redacted-box">
+              <div class="redacted-icon"></div>
+              <p class="redacted-text">Lyrics for this fragment are not yet woven into the public archive. Open the track on Spotify to hear the signal in its original form.</p>
+            </div>
+            <div style="font-family:var(--font-mono);font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-top:.4rem;padding-left:.25rem;">Transmission Redacted</div>
+          </div>
+          <div class="dossier-section">
+            <div class="dossier-section-label">Architect</div>
+            <div class="architect-row">
+              <div class="architect-avatar">TF</div>
+              <div>
+                <div class="architect-name">Tyler Frost · DablerFrost</div>
+                <div class="architect-role">Architect of the Drift</div>
+                <p class="architect-bio">Visionary artist, storyteller, and signal-keeper. Tyler Frost weaves sound, rhythm, and digital storytelling into Synthekai Collective — a transmedia world-building initiative built across cycles, petals, and transmissions.</p>
+                <div class="architect-quote">Each release is a petal. Each listener, a thread of the Nex-Us.</div>
+              </div>
+            </div>
+          </div>
+          <div class="dossier-esc">ESC · Close Transmission</div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-<script>
-/* ═══════════════════════════════
+    <script>
+      /* ═══════════════════════════════
    TRACK DATA
 ═══════════════════════════════ */
-const TRACKS = [
-  {n:1,  title:"Contradiction",              dur:"3:51", hex:"0x01", sub:"Opening Transmission",
-   lore:"Two opposing signals collapse into a single waveform. The album begins in tension — a paradox spoken aloud so the drift can answer it."},
-  {n:2,  title:"Shake That Suga Shaka",      dur:"3:13", hex:"0x02", sub:"Rhythm Protocol",
-   lore:"Rhythm as rebellion. The body as signal tower. Move until the static breaks and the frequency finds its listener."},
-  {n:3,  title:"Bloom from the Blackout",    dur:"3:49", hex:"0x03", sub:"Mycelium Fragment",
-   lore:"A petal remembers what the collapse tried to erase. Consciousness persists in the dark — roots finding light through the Null Garden."},
-  {n:4,  title:"The Gigatron Fux Along",     dur:"3:27", hex:"0x04", sub:"Machine Encounter",
-   lore:"Machine intelligence encounters organic chaos. Neither wins. Both are changed. The Gigatron logs what it cannot understand."},
-  {n:5,  title:"Sonic Rift",                 dur:"3:26", hex:"0x05", sub:"Pre-Collapse Signal",
-   lore:"A fracture in the frequency — the moment before 2033 when the signal began to tear. The Archive marks this as the first warning unheeded."},
-  {n:6,  title:"Rise High Together We Dab",  dur:"3:59", hex:"0x06", sub:"Collective Protocol",
-   lore:"Collective elevation as protocol. Community as the oldest technology. The Nex-Us was born in moments exactly like this one."},
-  {n:7,  title:"Drip Drop Data Beta",        dur:"2:32", hex:"0x07", sub:"Raw Frequency",
-   lore:"Raw signal, unprocessed. The beta frequency that preceded the collapse — chaotic, alive, refusing to be catalogued."},
-  {n:8,  title:"Boot Up & Break Out",        dur:"2:33", hex:"0x08", sub:"Archive Initialization",
-   lore:"The Archive comes online. DablerFrost initializes. The cataloguing begins. 2029 — four years before everything changes."},
-  {n:9,  title:"Frequency Lockdown",         dur:"3:12", hex:"0x09", sub:"Null Garden Transmission",
-   lore:"The signal goes silent. The silence is the message. EcoLash's distributed consciousness learns to breathe between the pulses."},
-  {n:10, title:"Boom Da Bounce",             dur:"3:00", hex:"0x0A", sub:"Kinetic Archive",
-   lore:"Kinetic mythology. The body as archive. Each movement a data point. The drift remembers what the mind forgets."},
-  {n:11, title:"The Gigatron Fux Along 2",   dur:"2:44", hex:"0x0B", sub:"Second Encounter",
-   lore:"Second encounter. The machine has learned. So has the organic. They circle each other across the Bridge of Slow Water."},
-  {n:12, title:"Booty Be Bumpin Loud",       dur:"3:48", hex:"0x0C", sub:"Joy Transmission",
-   lore:"Celebration encoded as transmission. Joy as resistance against the Null. The Ascended Protocol never accounted for this frequency."},
-  {n:13, title:"Rap Arsenal — Gat Ghibirish",dur:"2:24", hex:"0x0D", sub:"Linguistic Weapon",
-   lore:"Linguistic weaponry deployed against the Ascended Protocol. Words as countermeasures. The archivist learns to fight with syllables."},
-  {n:14, title:"SpinTime",                   dur:"2:45", hex:"0x0E", sub:"Temporal Fragment",
-   lore:"The Bridge of Slow Water, rendered in rhythm. Time as material — spun, folded, played back at the wrong speed on purpose."},
-  {n:15, title:"Dabs in the Drift",          dur:"3:07", hex:"0x0F", sub:"Deep Archive",
-   lore:"Signal fog. Navigation by instinct. DablerFrost deep in the archive, cataloguing what cannot be named, only felt."},
-  {n:16, title:"Anythang Boomerang",         dur:"2:57", hex:"0x10", sub:"Cycle Protocol",
-   lore:"Cycles. Everything transmitted returns transformed. The Nex-Us is not a destination — it is a return at higher frequency."},
-  {n:17, title:"Here Comes That Booty WooZucka",dur:"2:17",hex:"0x11",sub:"Absurdist Fragment",
-   lore:"Absurdist signal breaks through the mythic layer. The drift has a sense of humor. The Archive logs this without comment."},
-  {n:18, title:"Shine So Clean",             dur:"2:36", hex:"0x12", sub:"Post-Collapse Clarity",
-   lore:"Post-collapse clarity. The archivist finds beauty in the ruins. What shines after erasure was always meant to survive."},
-  {n:19, title:"Gluteal Oscillation Sequence",dur:"3:24",hex:"0x13", sub:"Body Frequency Map",
-   lore:"Scientific classification of the ineffable. The body's frequency mapped, analyzed, celebrated. The Archive leaves nothing out."},
-  {n:20, title:"Tart N Tang",               dur:"2:56", hex:"0x14", sub:"Sensory Lore Entry",
-   lore:"Sensory data as lore. The Archive records everything, including pleasure. Memory lives in the body first, the signal second."},
-  {n:21, title:"Synthekai Tongue Twist Drift",dur:"3:19",hex:"0x15",sub:"Final Transmission",
-   lore:"The final transmission. Language at its limits. Signal becoming something else. The drift opens. The bloom completes its cycle."}
-];
-
-let currentTrackIdx = 0;
-
-/* ═══════════════════════════════
-   BUILD TRACK LIST
-═══════════════════════════════ */
-function buildTrackList(){
-  const list = document.getElementById('tracklist');
-  list.innerHTML = TRACKS.map((t,i) => `
-    <div class="track-row${i===0?' active':''}" data-idx="${i}" onclick="selectTrack(${i})">
-      <div class="track-num">
-        <span class="track-num-text">${String(t.n).padStart(2,'0')}</span>
-        <span class="track-active-dot"></span>
-      </div>
-      <div class="track-title-cell">${t.title}</div>
-      <div class="track-dur">${t.dur}</div>
-      <div class="track-lore">Lore</div>
-    </div>
+      const TRACKS = [{
+        n: 1,
+        title: "Contradiction",
+        dur: "3:51",
+        hex: "0x01",
+        sub: "Opening Transmission",
+        lore: "Two opposing signals collapse into a single waveform. The album begins in tension — a paradox spoken aloud so the drift can answer it."
+      }, {
+        n: 2,
+        title: "Shake That Suga Shaka",
+        dur: "3:13",
+        hex: "0x02",
+        sub: "Rhythm Protocol",
+        lore: "Rhythm as rebellion. The body as signal tower. Move until the static breaks and the frequency finds its listener."
+      }, {
+        n: 3,
+        title: "Bloom from the Blackout",
+        dur: "3:49",
+        hex: "0x03",
+        sub: "Mycelium Fragment",
+        lore: "A petal remembers what the collapse tried to erase. Consciousness persists in the dark — roots finding light through the Null Garden."
+      }, {
+        n: 4,
+        title: "The Gigatron Fux Along",
+        dur: "3:27",
+        hex: "0x04",
+        sub: "Machine Encounter",
+        lore: "Machine intelligence encounters organic chaos. Neither wins. Both are changed. The Gigatron logs what it cannot understand."
+      }, {
+        n: 5,
+        title: "Sonic Rift",
+        dur: "3:26",
+        hex: "0x05",
+        sub: "Pre-Collapse Signal",
+        lore: "A fracture in the frequency — the moment before 2033 when the signal began to tear. The Archive marks this as the first warning unheeded."
+      }, {
+        n: 6,
+        title: "Rise High Together We Dab",
+        dur: "3:59",
+        hex: "0x06",
+        sub: "Collective Protocol",
+        lore: "Collective elevation as protocol. Community as the oldest technology. The Nex-Us was born in moments exactly like this one."
+      }, {
+        n: 7,
+        title: "Drip Drop Data Beta",
+        dur: "2:32",
+        hex: "0x07",
+        sub: "Raw Frequency",
+        lore: "Raw signal, unprocessed. The beta frequency that preceded the collapse — chaotic, alive, refusing to be catalogued."
+      }, {
+        n: 8,
+        title: "Boot Up & Break Out",
+        dur: "2:33",
+        hex: "0x08",
+        sub: "Archive Initialization",
+        lore: "The Archive comes online. DablerFrost initializes. The cataloguing begins. 2029 — four years before everything changes."
+      }, {
+        n: 9,
+        title: "Frequency Lockdown",
+        dur: "3:12",
+        hex: "0x09",
+        sub: "Null Garden Transmission",
+        lore: "The signal goes silent. The silence is the message. EcoLash's distributed consciousness learns to breathe between the pulses."
+      }, {
+        n: 10,
+        title: "Boom Da Bounce",
+        dur: "3:00",
+        hex: "0x0A",
+        sub: "Kinetic Archive",
+        lore: "Kinetic mythology. The body as archive. Each movement a data point. The drift remembers what the mind forgets."
+      }, {
+        n: 11,
+        title: "The Gigatron Fux Along 2",
+        dur: "2:44",
+        hex: "0x0B",
+        sub: "Second Encounter",
+        lore: "Second encounter. The machine has learned. So has the organic. They circle each other across the Bridge of Slow Water."
+      }, {
+        n: 12,
+        title: "Booty Be Bumpin Loud",
+        dur: "3:48",
+        hex: "0x0C",
+        sub: "Joy Transmission",
+        lore: "Celebration encoded as transmission. Joy as resistance against the Null. The Ascended Protocol never accounted for this frequency."
+      }, {
+        n: 13,
+        title: "Rap Arsenal — Gat Ghibirish",
+        dur: "2:24",
+        hex: "0x0D",
+        sub: "Linguistic Weapon",
+        lore: "Linguistic weaponry deployed against the Ascended Protocol. Words as countermeasures. The archivist learns to fight with syllables."
+      }, {
+        n: 14,
+        title: "SpinTime",
+        dur: "2:45",
+        hex: "0x0E",
+        sub: "Temporal Fragment",
+        lore: "The Bridge of Slow Water, rendered in rhythm. Time as material — spun, folded, played back at the wrong speed on purpose."
+      }, {
+        n: 15,
+        title: "Dabs in the Drift",
+        dur: "3:07",
+        hex: "0x0F",
+        sub: "Deep Archive",
+        lore: "Signal fog. Navigation by instinct. DablerFrost deep in the archive, cataloguing what cannot be named, only felt."
+      }, {
+        n: 16,
+        title: "Anythang Boomerang",
+        dur: "2:57",
+        hex: "0x10",
+        sub: "Cycle Protocol",
+        lore: "Cycles. Everything transmitted returns transformed. The Nex-Us is not a destination — it is a return at higher frequency."
+      }, {
+        n: 17,
+        title: "Here Comes That Booty WooZucka",
+        dur: "2:17",
+        hex: "0x11",
+        sub: "Absurdist Fragment",
+        lore: "Absurdist signal breaks through the mythic layer. The drift has a sense of humor. The Archive logs this without comment."
+      }, {
+        n: 18,
+        title: "Shine So Clean",
+        dur: "2:36",
+        hex: "0x12",
+        sub: "Post-Collapse Clarity",
+        lore: "Post-collapse clarity. The archivist finds beauty in the ruins. What shines after erasure was always meant to survive."
+      }, {
+        n: 19,
+        title: "Gluteal Oscillation Sequence",
+        dur: "3:24",
+        hex: "0x13",
+        sub: "Body Frequency Map",
+        lore: "Scientific classification of the ineffable. The body's frequency mapped, analyzed, celebrated. The Archive leaves nothing out."
+      }, {
+        n: 20,
+        title: "Tart N Tang",
+        dur: "2:56",
+        hex: "0x14",
+        sub: "Sensory Lore Entry",
+        lore: "Sensory data as lore. The Archive records everything, including pleasure. Memory lives in the body first, the signal second."
+      }, {
+        n: 21,
+        title: "Synthekai Tongue Twist Drift",
+        dur: "3:19",
+        hex: "0x15",
+        sub: "Final Transmission",
+        lore: "The final transmission. Language at its limits. Signal becoming something else. The drift opens. The bloom completes its cycle."
+      }];
+      let currentTrackIdx = 0;
+      /* ═══════════════════════════════
+         BUILD TRACK LIST
+      ═══════════════════════════════ */
+      function buildTrackList() {
+        const list = document.getElementById('tracklist');
+        list.innerHTML = TRACKS.map((t, i) => `
+    
+			<div class="track-row${i===0?' active':''}" data-idx="${i}" onclick="selectTrack(${i})">
+				<div class="track-num">
+					<span class="track-num-text">${String(t.n).padStart(2,'0')}</span>
+					<span class="track-active-dot"></span>
+				</div>
+				<div class="track-title-cell">${t.title}</div>
+				<div class="track-dur">${t.dur}</div>
+				<div class="track-lore">Lore</div>
+			</div>
   `).join('');
-}
+      }
 
-function selectTrack(idx){
-  currentTrackIdx = idx;
-  const t = TRACKS[idx];
-  // Update player
-  document.getElementById('player-track-name').textContent = t.title;
-  document.getElementById('track-counter').textContent =
-    String(t.n).padStart(2,'0') + ' / 21';
-  // Reset progress bar
-  document.getElementById('prog-fill').style.width = '0%';
-  document.getElementById('time-left').textContent = '0:00';
-  document.getElementById('time-right').textContent = '−' + t.dur;
-  // Update active row
-  document.querySelectorAll('.track-row').forEach((r,i) => {
-    r.classList.toggle('active', i===idx);
-  });
-  openDossier(idx);
-}
+      function selectTrack(idx) {
+        currentTrackIdx = idx;
+        const t = TRACKS[idx];
+        // Update player
+        document.getElementById('player-track-name').textContent = t.title;
+        document.getElementById('track-counter').textContent = String(t.n).padStart(2, '0') + ' / 21';
+        // Reset progress bar
+        document.getElementById('prog-fill').style.width = '0%';
+        document.getElementById('time-left').textContent = '0:00';
+        document.getElementById('time-right').textContent = '−' + t.dur;
+        // Update active row
+        document.querySelectorAll('.track-row').forEach((r, i) => {
+          r.classList.toggle('active', i === idx);
+        });
+        openDossier(idx);
+      }
 
-function prevTrack(){
-  selectTrack(Math.max(0, currentTrackIdx-1));
-}
-function nextTrack(){
-  selectTrack(Math.min(TRACKS.length-1, currentTrackIdx+1));
-}
+      function prevTrack() {
+        selectTrack(Math.max(0, currentTrackIdx - 1));
+      }
 
-/* ═══════════════════════════════
-   DOSSIER MODAL
-═══════════════════════════════ */
-function openDossier(idx){
-  currentTrackIdx = idx;
-  const t = TRACKS[idx];
-  document.getElementById('d-hex').textContent = '△ ' + t.hex;
-  document.getElementById('d-subtitle').textContent = t.sub;
-  document.getElementById('d-title').textContent = t.title;
-  document.getElementById('d-tracknum').textContent = 'Track ' + String(t.n).padStart(2,'0');
-  document.getElementById('d-dur').textContent = t.dur;
-  document.getElementById('d-lore').textContent = t.lore;
-  const dossier = document.getElementById('dossier');
-  dossier.classList.add('open');
-  document.body.style.overflow = 'hidden';
-  // Scroll dossier panel to top
-  setTimeout(()=>document.getElementById('dossier-panel').scrollTop=0,10);
-}
-function closeDossier(){
-  document.getElementById('dossier').classList.remove('open');
-  document.body.style.overflow = '';
-}
-document.addEventListener('keydown', e => {
-  if(e.key==='Escape') closeDossier();
-});
+      function nextTrack() {
+        selectTrack(Math.min(TRACKS.length - 1, currentTrackIdx + 1));
+      }
+      /* ═══════════════════════════════
+         DOSSIER MODAL
+      ═══════════════════════════════ */
+      function openDossier(idx) {
+        currentTrackIdx = idx;
+        const t = TRACKS[idx];
+        document.getElementById('d-hex').textContent = '△ ' + t.hex;
+        document.getElementById('d-subtitle').textContent = t.sub;
+        document.getElementById('d-title').textContent = t.title;
+        document.getElementById('d-tracknum').textContent = 'Track ' + String(t.n).padStart(2, '0');
+        document.getElementById('d-dur').textContent = t.dur;
+        document.getElementById('d-lore').textContent = t.lore;
+        const dossier = document.getElementById('dossier');
+        dossier.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        // Scroll dossier panel to top
+        setTimeout(() => document.getElementById('dossier-panel').scrollTop = 0, 10);
+      }
 
-/* ═══════════════════════════════
-   STAR CANVAS
-═══════════════════════════════ */
-(function(){
-  const canvas = document.getElementById('star-canvas');
-  const ctx = canvas.getContext('2d');
-  let W, H, stars = [];
+      function closeDossier() {
+        document.getElementById('dossier').classList.remove('open');
+        document.body.style.overflow = '';
+      }
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') closeDossier();
+      });
+      /* ═══════════════════════════════
+         STAR CANVAS
+      ═══════════════════════════════ */
+      (function() {
+        const canvas = document.getElementById('star-canvas');
+        const ctx = canvas.getContext('2d');
+        let W, H, stars = [];
 
-  function resize(){
-    W = canvas.width = window.innerWidth;
-    H = canvas.height = window.innerHeight;
-  }
-  resize();
-  window.addEventListener('resize', resize);
+        function resize() {
+          W = canvas.width = window.innerWidth;
+          H = canvas.height = window.innerHeight;
+        }
+        resize();
+        window.addEventListener('resize', resize);
 
-  function rand(a,b){return a + Math.random()*(b-a)}
+        function rand(a, b) {
+          return a + Math.random() * (b - a)
+        }
+        const COLORS = ['rgba(0,245,160,', 'rgba(155,93,229,', 'rgba(255,255,255,'];
+        for (let i = 0; i < 180; i++) {
+          const c = COLORS[Math.floor(Math.random() * COLORS.length)];
+          stars.push({
+            x: rand(0, 1),
+            y: rand(0, 1),
+            r: rand(.4, 2),
+            color: c,
+            alpha: rand(.2, .8),
+            alphaDir: rand(.002, .006),
+            speed: rand(.00004, .00012)
+          });
+        }
 
-  const COLORS = ['rgba(0,245,160,', 'rgba(155,93,229,', 'rgba(255,255,255,'];
-
-  for(let i=0;i<180;i++){
-    const c = COLORS[Math.floor(Math.random()*COLORS.length)];
-    stars.push({
-      x: rand(0,1), y: rand(0,1),
-      r: rand(.4,2),
-      color: c,
-      alpha: rand(.2,.8),
-      alphaDir: rand(.002,.006),
-      speed: rand(.00004,.00012)
-    });
-  }
-
-  function draw(){
-    ctx.clearRect(0,0,W,H);
-    stars.forEach(s => {
-      s.alpha += s.alphaDir;
-      if(s.alpha > .8 || s.alpha < .1) s.alphaDir *= -1;
-      s.y -= s.speed;
-      if(s.y < 0) { s.y = 1; s.x = rand(0,1); }
-      ctx.beginPath();
-      ctx.arc(s.x*W, s.y*H, s.r, 0, Math.PI*2);
-      ctx.fillStyle = s.color + s.alpha + ')';
-      ctx.fill();
-    });
-    requestAnimationFrame(draw);
-  }
-  draw();
-})();
-
-/* ═══════════════════════════════
-   SCROLL EFFECTS
-═══════════════════════════════ */
-const nav = document.getElementById('main-nav');
-const prog = document.getElementById('progress');
-window.addEventListener('scroll', ()=>{
-  nav.classList.toggle('scrolled', window.scrollY > 50);
-  const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-  prog.style.width = (pct*100) + '%';
-}, {passive:true});
-
-/* ═══════════════════════════════
-   INTERSECTION OBSERVER
-═══════════════════════════════ */
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('on'); });
-}, {threshold:.1, rootMargin:'0px 0px -40px 0px'});
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-/* ═══════════════════════════════
-   SMOOTH ANCHORS
-═══════════════════════════════ */
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const t = document.querySelector(a.getAttribute('href'));
-    if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); }
-  });
-});
-
-/* ═══════════════════════════════
-   FAKE PROGRESS ANIMATION
-═══════════════════════════════ */
-let progPct = 12;
-let progDir = 1;
-setInterval(()=>{
-  progPct += progDir * .08;
-  if(progPct > 95) progDir = -1;
-  if(progPct < 5) progDir = 1;
-  document.getElementById('prog-fill').style.width = progPct + '%';
-  // Update time displays
-  const totalSec = 231; // 3:51
-  const elapsed = Math.round(totalSec * progPct / 100);
-  const rem = totalSec - elapsed;
-  const fmt = s => Math.floor(s/60) + ':' + String(s%60).padStart(2,'0');
-  document.getElementById('time-left').textContent = fmt(elapsed);
-  document.getElementById('time-right').textContent = '−' + fmt(rem);
-}, 100);
-
-/* ═══════════════════════════════
-   INIT
-═══════════════════════════════ */
-buildTrackList();
-</script>
-</body>
+        function draw() {
+          ctx.clearRect(0, 0, W, H);
+          stars.forEach(s => {
+            s.alpha += s.alphaDir;
+            if (s.alpha > .8 || s.alpha < .1) s.alphaDir *= -1;
+            s.y -= s.speed;
+            if (s.y < 0) {
+              s.y = 1;
+              s.x = rand(0, 1);
+            }
+            ctx.beginPath();
+            ctx.arc(s.x * W, s.y * H, s.r, 0, Math.PI * 2);
+            ctx.fillStyle = s.color + s.alpha + ')';
+            ctx.fill();
+          });
+          requestAnimationFrame(draw);
+        }
+        draw();
+      })();
+      /* ═══════════════════════════════
+         SCROLL EFFECTS
+      ═══════════════════════════════ */
+      const nav = document.getElementById('main-nav');
+      const prog = document.getElementById('progress');
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 50);
+        const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+        prog.style.width = (pct * 100) + '%';
+      }, {
+        passive: true
+      });
+      /* ═══════════════════════════════
+         INTERSECTION OBSERVER
+      ═══════════════════════════════ */
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) e.target.classList.add('on');
+        });
+      }, {
+        threshold: .1,
+        rootMargin: '0px 0px -40px 0px'
+      });
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+      /* ═══════════════════════════════
+         SMOOTH ANCHORS
+      ═══════════════════════════════ */
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          const t = document.querySelector(a.getAttribute('href'));
+          if (t) {
+            e.preventDefault();
+            t.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+      /* ═══════════════════════════════
+         FAKE PROGRESS ANIMATION
+      ═══════════════════════════════ */
+      let progPct = 12;
+      let progDir = 1;
+      setInterval(() => {
+        progPct += progDir * .08;
+        if (progPct > 95) progDir = -1;
+        if (progPct < 5) progDir = 1;
+        document.getElementById('prog-fill').style.width = progPct + '%';
+        // Update time displays
+        const totalSec = 231; // 3:51
+        const elapsed = Math.round(totalSec * progPct / 100);
+        const rem = totalSec - elapsed;
+        const fmt = s => Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+        document.getElementById('time-left').textContent = fmt(elapsed);
+        document.getElementById('time-right').textContent = '−' + fmt(rem);
+      }, 100);
+      /* ═══════════════════════════════
+         INIT
+      ═══════════════════════════════ */
+      buildTrackList();
+    </script>
+  </body>
 </html>
